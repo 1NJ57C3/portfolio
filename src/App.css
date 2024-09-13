@@ -1,6 +1,9 @@
 :root {
   --banner-heading-size: x-large;
-  --header-padding: 1.5rem 2rem;
+  --header-padding-x: 2rem;
+  --header-padding-y: 1.5rem;
+  --header-padding: var(--header-padding-y) var(--header-padding-x);
+  --header-padding-x-offset: calc(2 * var(--header-padding-x));
   --root-padding: 0rem;
   --root-max-width: 1280px;
 }
@@ -35,9 +38,11 @@
 
 .NavBar ul {
   display: flex;
-  list-style-type: none;
+  justify-content: space-between;
   margin: 0;
-  padding: var(--header-padding);
+  padding-left: 0;
+  padding-right: var(--header-padding-x);
+  list-style-type: none;
 }
 
 .logo {
@@ -45,7 +50,6 @@
   padding: var(--header-padding);
   font-size: var(--banner-heading-size);
 }
-
 
 hgroup p {
   font-weight: bold;
