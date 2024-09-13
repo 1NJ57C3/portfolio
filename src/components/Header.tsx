@@ -2,7 +2,7 @@ import NavBar from "./NavBar";
 
 function Header() {
   return (
-    <header role="banner">
+    <header role="banner" className="Header">
       <h3>
         <a href="/">1NJ57C3.dev</a>
       </h3>
