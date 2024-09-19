@@ -5,18 +5,14 @@ type InputType<T extends ModeType> = T extends "insert" ? string : number;
 
 export function useTypewriter<T extends ModeType>(input: InputType<T>, mode: T = "insert" as T) {
 // syntax: function typewriter <const T = ModeType> (paramA: ParamAType<this.T>, paramB: this.T = defaultValue typed this.T)
-
-/*
-  input = [{input, mode}, {input, mode}, {input, mode}]
-  input.forEach => {
-    if (mode === "insert") typewrite(input as string)
-    if (mode === "delete") backspace(input as number)
-  ! need to chain timeouts if working this way; past attempts have still been glitchy at best
-  */
-
-  const [output, setOutput] = useState(mode === "insert" ? input as string : "this is a test"); // ! temporary value for writing `backspace()`
+  const [output, setOutput] = useState(mode === "delete" ? input as number : ""); // ! temporary value for writing `backspace()` * decouple and kick out to context?
+  // output = {left: string, right:string}
+  // <p>{output.left}<Caret />{output.right}</p>
+  //   caret = <span>&nbsp;</span>
+  //   caret = output.right[0]
+  //     output = { left: string, caret: string | string[], right: string}
   const [index, setIndex] = useState(0);
-  const [deletions, setDeletions] = useState(mode === "delete" ? input as number : 0); // TODO will need rework for iterations
+  const [deletions, setDeletions] = useState(mode === "delete" ? input as number : 0); // TODO will need rework for iterations * need to figure out how to set
   const wordsPerMinute = 135; // ? move to context for easier config?
   const charactersPerMinute = wordsPerMinute * 5;
   const msPerCharacter = 60000 / charactersPerMinute;
@@ -31,7 +27,7 @@ export function useTypewriter<T extends ModeType>(input: InputType<T>, mode: T =
   
     function backspace() {
       if (deletions > 0) {
-        setOutput((prev) => prev.slice(0, -1));
+        setOutput((prev) => (prev as string).slice(0, -1));
         setDeletions((prev) => prev - 1);
       }
     }
@@ -46,9 +42,15 @@ export function useTypewriter<T extends ModeType>(input: InputType<T>, mode: T =
       if (mode === "delete") backspace();
     });
   }, [index, input, deletions, mode, msPerCharacter]);
-
-  return output;
 }
+
+/*
+  input = [{input, mode}, {input, mode}, {input, mode}]
+  input.forEach => {
+    if (mode === "insert") typewrite(input as string)
+    if (mode === "delete") backspace(input as number)
+  ! need to chain timeouts if working this way; past attempts have still been glitchy at best
+  */
 
 /* --
   // TODO  HANDLING MULTIPLE STRINGS/INTERRUPTIONS?
