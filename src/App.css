@@ -24,6 +24,13 @@
   min-height: 100vh;
 }
 
+.Landing {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
 .Header {
   display: flex;
   flex-direction: row;
