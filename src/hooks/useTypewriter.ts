@@ -1,16 +1,20 @@
 import { useEffect, useState } from "react";
+// import { useTypewriterContext } from "../contexts/useTypewriterContext";
 
 type ModeType = "insert"|"delete"|"pause";
 type InputType<T extends ModeType> = T extends "insert" ? string : number;
 
-export function useTypewriter<T extends ModeType>(input: InputType<T>, mode: T = "insert" as T) {
-// syntax: function typewriter <const T = ModeType> (paramA: ParamAType<this.T>, paramB: this.T = defaultValue typed this.T)
-  const [output, setOutput] = useState(mode === "delete" ? input as number : ""); // ! temporary value for writing `backspace()` * decouple and kick out to context?
+export function useTypewriter<T extends ModeType>(input: InputType<T>, mode: T = "insert" as T, initDelayMS = 0) {
+  // syntax: function typewriter <const T = ModeType> (paramA: ParamAType<this.T>, paramB: this.T = defaultValue typed this.T)
+  // ? Switch up root parameters to array of objects? i.e. [ { input, mode, delay}, ]...?
+  const [output, setOutput] = useState(mode === "delete" ? input as number : "");
+  // TODO potential rework?
   // output = {left: string, right:string}
   // <p>{output.left}<Caret />{output.right}</p>
   //   caret = <span>&nbsp;</span>
   //   caret = output.right[0]
-  //     output = { left: string, caret: string | string[], right: string}
+  //     { left: output, caret: output.slice(selectStart, index), right: output.slice(index, output.length) } = output;
+          // handleSelection function will need to be able to tell whether to move start or end increments/decrements independently
   const [index, setIndex] = useState(0);
   const [deletions, setDeletions] = useState(mode === "delete" ? input as number : 0); // TODO will need rework for iterations * need to figure out how to set
   const wordsPerMinute = 135; // ? move to context for easier config?
@@ -33,7 +37,7 @@ export function useTypewriter<T extends ModeType>(input: InputType<T>, mode: T =
     }
   
     function renderOutput(changes: () => void) {
-      const timeout = setTimeout(changes, msPerCharacter);
+      const timeout = setTimeout(changes, msPerCharacter + initDelayMS);
       return () => clearTimeout(timeout);
     }
 
@@ -41,7 +45,9 @@ export function useTypewriter<T extends ModeType>(input: InputType<T>, mode: T =
       if (mode === "insert") typewrite(input as string);
       if (mode === "delete") backspace();
     });
-  }, [index, input, deletions, mode, msPerCharacter]);
+  }, [index, input, deletions, mode, msPerCharacter, setOutput, initDelayMS]);
+
+  return output;
 }
 
 /*
