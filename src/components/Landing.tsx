@@ -63,7 +63,7 @@ function Landing(){
         <a href="/">
           <h1>{useTypewriter(mainHeader)}</h1>
         </a>
-        <h4>{useTypewriter(subHeader)}</h4>
+        <h4>{useTypewriter(subHeader, "insert", mainHeader.length)}</h4>
       </hgroup>
     </div>
   )
