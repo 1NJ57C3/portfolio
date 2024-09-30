@@ -1,10 +1,12 @@
+import '../styles/ProjectCard.css';
+
 interface PropsTypes {
   name: string;
   description: string;
   tech: string[];
   urls: {
     repo: string;
-    demo?: string;
+    demo: string | null;
   };
 }
 
@@ -28,6 +30,20 @@ function ProjectCard({ name, description, tech, urls }: PropsTypes) {
               ? under description?
                 ? GH / Play icon links/buttons?
                   * if (!urls.demo) <PlayButton disabled />
+          ? collage of project images
+            * hover
+              * slight grow
+                ? breathing/pulsing?
+              * light translucent overlay
+              * quick links to repo/demo
+            * click
+              * transition
+                * 1
+                  ? grows into own row beneath current?
+                  ? slides info/description "out" from "underneath"?
+                    ? directionality based on position on grid?
+                * 2
+                  ? modal?
         * hover
           * grow
             ? sequence
@@ -44,36 +60,41 @@ function ProjectCard({ name, description, tech, urls }: PropsTypes) {
           ? deploy project to {projectname}.injustice.dev?
       */ }
 
-      <section>
-        <img />
-        { /* 
-          ? hidden carousel
-            ? &lsaqo; / &rsaquo; nav buttons appear on hover
-            ? smooth fade in/out
-          ? img | column thumb menu
+      <div className="content">
+        <section className="screenshots">
+          <img src="" alt="project image" height="128" width="128" />
+          { /* 
+            ? hidden carousel
+              ? &lsaqo; / &rsaquo; nav buttons appear on hover
+              ? smooth fade in/out
+            ? img | column thumb menu
+          */ }
+          <>
+            {/* <img /> */}
+            {/* <img /> */}
+            {/* <img /> */}
+          </>
+        </section>
+        <div className="vr " />
+
+        { /*
+          * thin vertical rule
+            ? outward fading gradient?
         */ }
-        <>
-          <img />
-          <img />
-          <img />
-        </>
-      </section>
 
-      { /*
-        * thin vertical rule
-          ? outward fading gradiant?
-      */ }
+        <section className="info">
+          <div>
+            <h2>{name}</h2>
+            <p>{description}</p>
+          </div>
+          <p>{tech.join(", ")}</p>
+          <div>
+            <a href={urls.repo}>Repo</a> |{" "}
+            {urls.demo ? <a href={urls.demo}>Demo</a> : "Demo"}
+          </div>
+        </section>
+      </div>
 
-      <section>
-        <span>{name}</span>
-        <span>{description}</span>
-        <span>{tech}</span>
-      </section>
-
-      <footer>
-        <a href={urls.repo}>Repo</a> |{" "}
-        {urls.demo ? <a href={urls.demo}>Demo</a> : "Demo"}
-      </footer>
     </div>
   );
 }

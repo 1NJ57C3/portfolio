@@ -1,0 +1,52 @@
+.ProjectCard {
+  background-color: #ffffff10;
+  border-radius: 0.75rem;
+  width: 80%;
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+.ProjectCard .content {
+  --ProjectCard-padding: 1.25rem;
+  background-color: #ffffff10;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: calc(100% - 2 * var(--ProjectCard-padding));
+  /* height doesn't auto-compensate for padding */
+  padding: var(--ProjectCard-padding);
+}
+
+section.screenshots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.screenshots img {
+  border: 1px dashed grey;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.vr {
+/* vertical rule */
+  background: radial-gradient(circle, #06060686, #00000000);
+  height: 69%;
+  width: 1.15px;
+  margin: 1rem;
+}
+
+section.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.ProjectCard h2 {
+  margin-top: 0;
+}
