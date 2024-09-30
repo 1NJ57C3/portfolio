@@ -1,46 +1,51 @@
 :root {
+  --layout-bg-color: #121212A7;
   --banner-heading-size: x-large;
   --header-padding-x: 2rem;
   --header-padding-y: 1.5rem;
   --header-padding: var(--header-padding-y) var(--header-padding-x);
   --header-padding-x-offset: calc(2 * var(--header-padding-x));
-  --root-padding: 0rem;
-  --root-max-width: 1280px;
+  --max-content-width: 1280px;
 }
 
 #root {
   text-align: center;
   margin: 0 auto;
-  padding: var(--root-padding);
+  padding: 0;
+  height: 100vh;
   width: 100%;
-  min-height: calc(100vh - 2 * var(--root-padding));
-  max-width: var(--root-max-width);
 }
 
 .App {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .Landing {
   display: flex;
-  flex-grow: 1;
+  flex: 1 0 100%;
   align-items: center;
   justify-content: center;
 }
 
+.Landing p {
+  font-weight: bold;
+}
+
 .Header {
+  background-color: var(--layout-bg-color);
+  backdrop-filter: blur(0.27rem);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-
-.Footer {
-  color: #888;
-  padding: 0.25rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .NavBar ul {
@@ -52,14 +57,28 @@
   list-style-type: none;
 }
 
+.Projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  max-width: var(--max-content-width);
+}
+
+.Footer {
+  background-color: var(--layout-bg-color);
+  color: #888;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 7rem;
+  width: 100%;
+}
+
 .logo {
   margin: 0;
   padding: var(--header-padding);
   font-size: var(--banner-heading-size);
-}
-
-hgroup p {
-  font-weight: bold;
 }
 
 .logo {
@@ -68,4 +87,10 @@ hgroup p {
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    flex: 1 1 100px;
+  }
 }
