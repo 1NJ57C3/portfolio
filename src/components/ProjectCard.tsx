@@ -1,4 +1,4 @@
-import '../styles/ProjectCard.css';
+import "../styles/ProjectCard.css";
 
 interface PropsTypes {
   name: string;
@@ -60,7 +60,7 @@ function ProjectCard({ name, description, tech, urls }: PropsTypes) {
           ? deploy project to {projectname}.injustice.dev?
       */ }
 
-      <div className="content">
+      <article className="content">
         <section className="screenshots">
           <img src="" alt="project image" height="128" width="128" />
           { /* 
@@ -93,8 +93,7 @@ function ProjectCard({ name, description, tech, urls }: PropsTypes) {
             {urls.demo ? <a href={urls.demo}>Demo</a> : "Demo"}
           </div>
         </section>
-      </div>
-
+      </article>
     </div>
   );
 }
