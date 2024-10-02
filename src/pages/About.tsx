@@ -10,11 +10,11 @@ function About() {
         versatile across the stack.
       </p>
       <p>
-        Recently, I&lsquo;ve been switching from JavaScript to TypeScript and
-        exploring backend development with Django. My current priority is
-        refining my portfolio, which includes projects like a React Native
-        weather app. I&lsquo;m also working to deepen my backend skills and
-        strengthen my understanding of databases like PostgreSQL and SQLite.
+        Recently, I’ve been transitioning from JavaScript to TypeScript and
+        exploring backend development with Django. While refining my portfolio,
+        I’m working on expanding my knowledge of backend technologies, including
+        databases like PostgreSQL and SQLite, as I continue to develop more
+        complex projects.
       </p>
       <p>
         At the core of my development process is a passion for problem-solving.
