@@ -54,8 +54,8 @@ function Landing(){
       Acrylic blur for modals
   */
 
-  const mainHeader = "‹injustice.dev›";
-  const subHeader = "Coming soon™";
+  const mainHeader = "‹injustice.dev/›";
+  const subHeader = "Under construction";
 
   return (
     <div className="Landing">

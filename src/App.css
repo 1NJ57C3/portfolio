@@ -1,11 +1,14 @@
 :root {
-  --layout-bg-color: #121212A7;
+  --layout-bg-color: #121212B4;
+  --nav-hover-bg-color: #00000038;
+  --nav-hover-text-color: #969696;
+  --nav-hover-accent-color: #9617eb;
   --banner-heading-size: x-large;
   --header-padding-x: 2rem;
   --header-padding-y: 1.5rem;
   --header-padding: var(--header-padding-y) var(--header-padding-x);
   --header-padding-x-offset: calc(2 * var(--header-padding-x));
-  --max-content-width: 1280px;
+  --project-card-padding: 1.25rem;
 }
 
 #root {
@@ -27,7 +30,7 @@
 
 .Landing {
   display: flex;
-  flex: 1 0 100%;
+  flex: 1 0 100vh;
   align-items: center;
   justify-content: center;
 }
@@ -37,7 +40,7 @@
 }
 
 .Header {
-  background-color: var(--layout-bg-color);
+  background: linear-gradient(var(--layout-bg-color) 74%, #0c081a6a);
   backdrop-filter: blur(0.27rem);
   display: flex;
   flex-direction: row;
@@ -57,12 +60,22 @@
   list-style-type: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 80%;
+}
+
+.About {
+  text-align: left;
+}
+
 .Projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: fit-content;
-  max-width: var(--max-content-width);
 }
 
 .Footer {
@@ -71,6 +84,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 4rem;
   min-height: 7rem;
   width: 100%;
 }
