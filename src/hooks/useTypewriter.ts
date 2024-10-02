@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import { useTypewriterContext } from "../contexts/useTypewriterContext";
 
 type ModeType = "insert" | "delete" | "pause";
 type InputType<T extends ModeType> = T extends "insert" ? string : number;
@@ -75,4 +74,11 @@ export function useTypewriter<T extends ModeType>(input: InputType<T>, mode: T =
   use separate outputs?
     output1, output2, index (cursor position)
       will require external state(s)
+* ability to handle more complex sequences
+  write current parameters as objects to be used in an array?
+  * maintain option to use hook in its current form
+  if first parameter is array, iterate through set of instructions to manipulate the single output
+  else do the normal thing
+    will likely need to rework initial delay condition
+    might be able to refactor less by wrapping current execution logic into helper function for above concept conditional
 -- */
