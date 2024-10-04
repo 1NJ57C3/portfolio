@@ -2,11 +2,20 @@ import ProjectCard from "../components/ProjectCard";
 import projects from "../data/projects.json";
 
 function Projects() {
+  function renderProjectCards() {
+    if (projects.length)
+      return projects.map((project, i) => (
+        <ProjectCard key={"p" + i} {...project} />
+      ));
+    else return <p>Coming soon™</p>
+  }
+
   return (
     <section className="Projects">
-      {projects.map((project, i) => (
-        <ProjectCard key={"p" + i} {...project} />
-      ))}
+      <header>
+        <h1 className="page-header">Projects</h1>
+      </header>
+      {renderProjectCards()}
     </section>
   );
 }
