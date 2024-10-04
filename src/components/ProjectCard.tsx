@@ -1,4 +1,4 @@
-import "../styles/ProjectCard.css";
+import styles from "../styles/ProjectCard.module.css";
 
 interface PropsTypes {
   name: string;
@@ -12,7 +12,7 @@ interface PropsTypes {
 
 function ProjectCard({ name, description, tech, urls }: PropsTypes) {
   return (
-    <div className="ProjectCard">
+    <div className={styles.ProjectCard}>
       { /*
         * layout
           ? thin border, radius'd, either darker than bg or medium grey
@@ -60,8 +60,8 @@ function ProjectCard({ name, description, tech, urls }: PropsTypes) {
           ? deploy project to {projectname}.injustice.dev?
       */ }
 
-      <article className="content">
-        <section className="screenshots">
+      <article className={styles.content}>
+        <section className={styles.screenshots}>
           <img src="" alt="project image" height="128" width="128" />
           { /* 
             ? hidden carousel
@@ -75,14 +75,14 @@ function ProjectCard({ name, description, tech, urls }: PropsTypes) {
             {/* <img /> */}
           </>
         </section>
-        <div className="vr " />
+        <div className={styles.vr} />
 
         { /*
           * thin vertical rule
             ? outward fading gradient?
         */ }
 
-        <section className="info">
+        <section className={styles.info}>
           <div>
             <h2>{name}</h2>
             <p>{description}</p>
