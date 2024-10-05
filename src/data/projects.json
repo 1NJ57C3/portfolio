@@ -1,3 +1,36 @@
 [
-  
+  {
+    "name": "Boring Weather App",
+    "description":
+      "My very first React Native app. A minimalist mobile application that fetches and parses current weather, air quality, and weather forecast data from OpenWeatherMap.org’s API services into a user-friendly interface.",
+    "tech": ["React Native"],
+    "urls": {
+      "repo": "https://github.com/1NJ57C3/BoringWeatherApp",
+      "demo": null,
+      "video": null
+    },
+    "images": []
+  },
+  {
+    "name": "Blueprint Thing",
+    "description": "A blueprinting application to draw building schematics for voxel-based video games such as Enshrouded and Minecraft. Currently in the MVP/proof-of-concept stage.",
+    "tech": ["React.js"],
+    "urls": {
+      "repo": "https://github.com/1NJ57C3/blueprint-thing",
+      "demo": null,
+      "video": null
+    },
+    "images": []
+  },
+  {
+    "name": "Text-Based RPG Engine",
+    "description": "My coding bootcamp capstone project. An engine for text-driven Role Playing Games, conceptually inspired by the idea of Zork (1977). The engine is driven by the presence of keywords in the player's responses to the game's prompts. I may be rebuilding and finishing this one in the near future.",
+    "tech": ["React.js", "Ruby on Rails"],
+    "urls": {
+      "repo": "https://github.com/1NJ57C3/phase-5-capstone-project/tree/development",
+      "demo": null,
+      "video": null
+    },
+    "images": []
+  }
 ]
