@@ -38,9 +38,12 @@ section.screenshots {
 section.info {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   padding: var(--project-card-padding);
   width: 70%;
+}
+
+.description {
+  text-align: left;
 }
 
 .ProjectCard h2 {
