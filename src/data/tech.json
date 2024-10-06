@@ -1,0 +1,171 @@
+[
+  {
+    "name": "HTML5",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/html5/html5-original.svg",
+    "website": "https://html.spec.whatwg.org/",
+    "category": ["language", "frontend"],
+    "associations": ["HTML"],
+    "confidence": 3
+  },
+  {
+    "name": "CSS3",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/css3/css3-original.svg",
+    "website": "https://www.w3.org/TR/CSS/#css",
+    "category": ["language", "frontend"],
+    "associations": ["CSS"],
+    "confidence": 2
+  },
+  {
+    "name": "JavaScript",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/javascript/javascript-original.svg",
+    "website": "https://www.ecma-international.org/publications-and-standards/standards/ecma-262/",
+    "category": ["language", "frontend"],
+    "associations": ["JavaScript"],
+    "confidence": 3
+  },
+  {
+    "name": "TypeScript",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/typescript/typescript-original.svg",
+    "website": "https://typescriptlang.org/",
+    "category": ["language", "frontend", "backend"],
+    "associations": ["JavaScript", "TypeScript"],
+    "confidence": 2
+  },
+  {
+    "name": "React",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/react/react-original.svg",
+    "website": "https://reactjs.org/",
+    "category": ["library", "frontend"],
+    "associations": ["JavaScript", "TypeScript"],
+    "confidence": 3
+  },
+  {
+    "name": "Python",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/python/python-original.svg",
+    "website": "https://python.org/",
+    "category": ["language", "frontend", "backend"],
+    "associations": ["Python"],
+    "confidence": 2
+  },
+  {
+    "name": "Django",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/django/django-plain.svg",
+    "website": "https://djangoproject.com/",
+    "category": ["framework", "backend"],
+    "associations": ["Python"],
+    "confidence": 1
+  },
+  {
+    "name": "Ruby",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/ruby/ruby-original.svg",
+    "website": "https://www.ruby-lang.org/",
+    "category": ["language", "backend"],
+    "associations": ["Ruby"],
+    "confidence": 2
+  },
+  {
+    "name": "Ruby on Rails",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/rails/rails-original-wordmark.svg",
+    "website": "https://rubyonrails.org/",
+    "category": ["framework", "backend"],
+    "associations": ["Ruby"],
+    "confidence": 2
+  },
+  {
+    "name": "SQLite",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/sqlite/sqlite-original.svg",
+    "website": "https://sqlite.org/",
+    "category": ["database", "backend"],
+    "associations": ["SQLite"],
+    "confidence": 1
+  },
+  {
+    "name": "PostgreSQL",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/postgresql/postgresql-original.svg",
+    "website": "https://www.postgresql.org/) ",
+    "category": ["database", "backend"],
+    "associations": ["PostgreSQL"],
+    "confidence": 1
+  },
+  {
+    "name": "Material UI",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/materialui/materialui-original.svg",
+    "website": "https://mui.com/",
+    "category": ["library", "frontend"],
+    "associations": ["React"],
+    "confidence": 2
+  },
+  {
+    "name": "Styled Components",
+    "logo": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
+    "website": "https://styled-components.com/) ",
+    "category": ["library", "frontend"],
+    "associations": ["CSS", "JavaScript", "React"],
+    "confidence": 2
+  },
+
+  {
+    "name": "React Router",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/reactrouter/reactrouter-original.svg",
+    "website": "https://reactrouter.com/",
+    "category": ["framework"],
+    "associations": ["React"],
+    "confidence": 2
+  },
+  {
+    "name": "pandas",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/pandas/pandas-original.svg",
+    "website": "https://pandas.pydata.org/",
+    "category": ["library", "data analysis"],
+    "associations": ["Python", "BeautifulSoup"],
+    "confidence": 2
+  },
+  {
+    "name": "BeautifulSoup",
+    "logo": "",
+    "website": "https://www.crummy.com/software/BeautifulSoup/",
+    "category": ["library", "web scraping"],
+    "associations": ["Python", "BeautifulSoup"],
+    "confidence": 2
+  },
+  {
+    "name": "Selenium",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/selenium/selenium-original.svg",
+    "website": "https://www.selenium.dev/",
+    "category": ["utility"],
+    "associations": ["Python", "BeautifulSoup"],
+    "confidence": 1
+  },
+  {
+    "name": "Git",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/git/git-original.svg",
+    "website": "https://git-scm.com/",
+    "category": ["utility", "version control"],
+    "associations": ["Git"],
+    "confidence": 2
+  },
+  {
+    "name": "Markdown",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/markdown/markdown-original.svg",
+    "website": "https://daringfireball.net/projects/markdown/",
+    "category": ["utility", "markup"],
+    "associations": ["Markdown"],
+    "confidence": 3
+  },
+  {
+    "name": "Visual Studio Code",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/vscode/vscode-original.svg",
+    "website": "https://code.visualstudio.com/",
+    "category": ["utility", "ide"],
+    "associations": [""],
+    "confidence": 3
+  },
+  {
+    "name": "Vite",
+    "logo": "../../public/vite.svg",
+    "website": "https://vite.dev/",
+    "category": ["utility", "build"],
+    "associations": ["JavaScript", "TypeScript", "React"],
+    "confidence": 2
+  }
+]
