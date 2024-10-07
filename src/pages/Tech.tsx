@@ -1,36 +1,36 @@
 import technologies from "../data/tech.json";
+import TechCard from "../components/TechCard";
 
 function Tech() {
   // * hover
   // * onMouseOver
   // ? hover language makes relevant icons jump/wiggle
-  const imgWidth = "75";
+  const imgWidth = "80";
   const languages = technologies.map(
-    ({ name, logo, website, category, associations }, i) => {
-      if (category.includes("language"))
-        return <img src={logo} alt={name} key={"tech" + i} width={imgWidth} />;
+    (technology, i) => {
+      if (technology.category.includes("language"))
+        return <TechCard {...technology} key={"tech" + i} imgWidth={imgWidth} />;
     }
   );
   const tech = technologies.map(
-    ({ name, logo, website, category, associations }, i) => {
-      if (category.includes("library") || category.includes("framework"))
-        return <img src={logo} alt={name} key={"tech" + i} width={imgWidth} />;
+    (technology, i) => {
+      if (technology.category.includes("library") || technology.category.includes("framework"))
+        return <TechCard {...technology} key={"tech" + i} imgWidth={imgWidth} />;
     }
   );
   const utilities = technologies.map(
-    ({ name, logo, website, category, associations }, i) => {
-      if (category.includes("utility"))
-        return <img src={logo} alt={name} key={"util" + i} width={imgWidth} />;
+    (technology, i) => {
+      if (technology.category.includes("utility"))
+        return <TechCard {...technology} key={"util" + i} imgWidth={imgWidth} />;
     }
   );
 
   return (
     <article className="Tech">
       <header>
-        <h1>Skills & Technologies</h1>
+        <h1 className="page-header">Skills & Technologies</h1>
         <p>
-          Here are some of the various technologies I&rsquo;ve worked with in the
-          past.
+          Some of the various technologies I&rsquo;ve worked with include:
         </p>
       </header>
       <section>
