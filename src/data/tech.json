@@ -97,7 +97,7 @@
   },
   {
     "name": "Styled Components",
-    "logo": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
+    "logo": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.svg",
     "website": "https://styled-components.com/) ",
     "category": ["library", "frontend"],
     "associations": ["CSS", "JavaScript", "React"],
