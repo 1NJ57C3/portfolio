@@ -1,6 +1,17 @@
+import { useNavContext } from "../contexts/useNavContext.ts";
+
 function About() {
+  const { navRefs } = useNavContext();
+
   return (
-    <article className="About">
+    <article
+      className="About"
+      ref={(element) => {
+        if (element) {
+          navRefs.current = { ...navRefs.current, About: element };
+        }
+      }}
+    >
       <header>
         <h1 className="page-header">About Me</h1>
       </header>

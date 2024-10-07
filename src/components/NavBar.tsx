@@ -1,16 +1,27 @@
-function NavBar() {
-  const navItems: string[] = ["About", "Projects", "Contact"];
+import { useNavContext } from "../contexts/useNavContext";
 
-  function handleClick(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+function NavBar() {
+  const navItems: string[] = ["About", "Projects", "Tech", "Contact"];
+  const { navRefs } = useNavContext();
+
+  function scrollIntoView(target: string) {
+    if (navRefs.current) {
+      navRefs.current[target].scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  function handleClick(
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+    navItem: string
+  ) {
     e.preventDefault();
-    console.log((e.target as HTMLButtonElement).id);
+    scrollIntoView(navItem);
   }
 
   const navButtons = navItems.map((navItem, i) => (
-    <li key={i} className="nav-item">
-      <button onClick={(e) => handleClick(e)} id={navItem}>
-        {navItem}
-      </button>
+    <li key={"nav" + i} className="nav-item">
+      <button onClick={(e) => handleClick(e, navItem)}>{navItem}</button>
+      <span className="nav-accent" />
     </li>
   ));
 

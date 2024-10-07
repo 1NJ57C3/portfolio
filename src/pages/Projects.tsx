@@ -1,17 +1,29 @@
+import { useNavContext } from "../contexts/useNavContext";
 import ProjectCard from "../components/ProjectCard";
 import projects from "../data/projects.json";
 
 function Projects() {
+  const { navRefs } = useNavContext();
+
   function renderProjectCards() {
-    if (projects.length)
+    if (projects.length) {
       return projects.map((project, i) => (
         <ProjectCard key={"p" + i} {...project} />
       ));
-    else return <p>Coming soon™</p>
+    } else {
+      return <p>Coming soon™</p>;
+    }
   }
 
   return (
-    <section className="Projects">
+    <section
+      className="Projects"
+      ref={(element) => {
+        if (element) {
+          navRefs.current = { ...navRefs.current, Projects: element };
+        }
+      }}
+    >
       <header>
         <h1 className="page-header">Projects</h1>
       </header>

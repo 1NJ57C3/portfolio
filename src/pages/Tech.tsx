@@ -1,37 +1,42 @@
-import technologies from "../data/tech.json";
+import { useNavContext } from "../contexts/useNavContext";
 import TechCard from "../components/TechCard";
+import technologies from "../data/tech.json";
 
 function Tech() {
-  // * hover
-  // * onMouseOver
-  // ? hover language makes relevant icons jump/wiggle
+  const { navRefs } = useNavContext();
   const imgWidth = "80";
-  const languages = technologies.map(
-    (technology, i) => {
-      if (technology.category.includes("language"))
-        return <TechCard {...technology} key={"tech" + i} imgWidth={imgWidth} />;
+
+  const languages = technologies.map((technology, i) => {
+    if (technology.category.includes("language")) {
+      return <TechCard {...technology} key={"tech" + i} imgWidth={imgWidth} />;
     }
-  );
-  const tech = technologies.map(
-    (technology, i) => {
-      if (technology.category.includes("library") || technology.category.includes("framework"))
-        return <TechCard {...technology} key={"tech" + i} imgWidth={imgWidth} />;
+  });
+  const tech = technologies.map((technology, i) => {
+    if (
+      technology.category.includes("library") ||
+      technology.category.includes("framework")
+    ) {
+      return <TechCard {...technology} key={"tech" + i} imgWidth={imgWidth} />;
     }
-  );
-  const utilities = technologies.map(
-    (technology, i) => {
-      if (technology.category.includes("utility"))
-        return <TechCard {...technology} key={"util" + i} imgWidth={imgWidth} />;
+  });
+  const utilities = technologies.map((technology, i) => {
+    if (technology.category.includes("utility")) {
+      return <TechCard {...technology} key={"util" + i} imgWidth={imgWidth} />;
     }
-  );
+  });
 
   return (
-    <article className="Tech">
+    <article
+      className="Tech"
+      ref={(element) => {
+        if (element) {
+          navRefs.current = { ...navRefs.current, Tech: element };
+        }
+      }}
+    >
       <header>
         <h1 className="page-header">Skills & Technologies</h1>
-        <p>
-          Some of the various technologies I&rsquo;ve worked with include:
-        </p>
+        <p>Some of the various technologies I&rsquo;ve worked with include:</p>
       </header>
       <section>
         <h2>Languages</h2>
