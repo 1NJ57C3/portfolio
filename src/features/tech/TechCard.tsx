@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./TechCard.css";
 
-interface TechProps {
+interface TechCardProps {
   name: string;
   logo: string;
   website: string;
@@ -11,7 +11,7 @@ interface TechProps {
   imgWidth: string;
 }
 
-function TechCard({ name, logo, website, category, associations, confidence, imgWidth }: TechProps) {
+function TechCard({ name, logo, website, category, associations, confidence, imgWidth }: TechCardProps) {
   const [hovered, setHovered] = useState(false);
 
   function handleMouseEnter() {

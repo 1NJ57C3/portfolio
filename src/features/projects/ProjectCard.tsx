@@ -1,6 +1,6 @@
 import styles from "./ProjectCard.module.css";
 
-interface PropsTypes {
+interface ProjectCardProps {
   name: string;
   description: string;
   tech: string[];
@@ -11,7 +11,7 @@ interface PropsTypes {
   images: string[];
 }
 
-function ProjectCard({ name, description, tech, urls, images }: PropsTypes) {
+function ProjectCard({ name, description, tech, urls, images }: ProjectCardProps) {
   function renderImages() {
     if (images.length) {
       { /*
