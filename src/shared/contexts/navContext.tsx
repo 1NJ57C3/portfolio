@@ -1,4 +1,5 @@
 import { createContext, useRef } from "react";
+import { ChildrenProps } from "../types/context"
 
 type NavComponentTypes = Record<string, HTMLElement>;
 
@@ -8,7 +9,7 @@ interface NavContextTypes {
 
 export const NavContext = createContext<NavContextTypes | null>(null);
 
-export function NavProvider({ children }: Children) {
+export function NavProvider({ children }: ChildrenProps) {
   const navRefs = useRef(null);
 
   return (

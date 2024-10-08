@@ -1,4 +1,4 @@
-import { useNavContext } from "../contexts/useNavContext";
+import { useNavContext } from "../../shared/contexts/useNavContext";
 
 function NavBar() {
   const navItems: string[] = ["About", "Projects", "Tech", "Contact"];

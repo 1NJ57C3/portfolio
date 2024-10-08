@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/TechCard.css";
+import "./TechCard.css";
 
 interface TechProps {
   name: string;

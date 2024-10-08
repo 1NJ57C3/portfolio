@@ -1,4 +1,4 @@
-import styles from "../styles/ProjectCard.module.css";
+import styles from "./ProjectCard.module.css";
 
 interface PropsTypes {
   name: string;
@@ -13,8 +13,19 @@ interface PropsTypes {
 
 function ProjectCard({ name, description, tech, urls, images }: PropsTypes) {
   function renderImages() {
-    if (images.length) return <img src={images[0]} alt="project image" />; // TODO handle multiple images (carousel, slideshow, etc.)
-    else return <p>Preview Coming Soon&trade;</p>
+    if (images.length) {
+      { /*
+        TODO preview slideshow
+          ? carousel underneath main preview image
+            ? carousel nav buttons `&lsaqo;` and `&rsaquo;`
+            ? gradient mask instead of traditional buttons
+            ? spinny wheel drag/momentum
+            ! probably won't have nor use enough images to justify carousel
+      */ }
+      return <img src={images[0]} alt="project image" />; // TODO handle multiple images (carousel, slideshow, etc.)
+    } else {
+      return <p>Preview Coming Soon&trade;</p>;
+    }
   }
 
   return (
@@ -22,12 +33,6 @@ function ProjectCard({ name, description, tech, urls, images }: PropsTypes) {
       <article className={styles.content}>
         <section className={styles.screenshots}>
           {renderImages()}
-          { /* 
-            ? hidden carousel
-              ? &lsaqo; / &rsaquo; nav buttons appear on hover
-              ? smooth fade in/out
-            ? img | column thumb menu
-          */ }
         </section>
         <div className={styles.vr} />
         <section className={styles.info}>
@@ -48,7 +53,10 @@ function ProjectCard({ name, description, tech, urls, images }: PropsTypes) {
 
 export default ProjectCard;
 
-{ /*
+/*
+  * hover
+    * onMouseOver
+      ? hover language makes relevant icons jump/wiggle
   * layout
     ? thin border, radius'd, either darker than bg or medium grey
       ? near-transparent background overlay with boxshadow/blur
@@ -93,4 +101,4 @@ export default ProjectCard;
         ? wormhole in?
   * demos
     ? deploy project to {projectname}.injustice.dev?
-*/ }
+*/

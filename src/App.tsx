@@ -1,10 +1,10 @@
-import { NavProvider } from "./contexts/NavContext";
-// import Header from "./components/Header";
-import Landing from "./components/Landing";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Tech from "./pages/Tech";
-import Footer from "./components/Footer";
+import { NavProvider } from "./shared/contexts/navContext";
+// import Header from "./features/header/Header";
+import Landing from "./features/landing/Landing";
+import About from "./features/about/About";
+import Projects from "./features/projects/Projects";
+import Tech from "./features/tech/Tech";
+import Footer from "./features/footer/Footer";
 import "./App.css";
 
 function App() {

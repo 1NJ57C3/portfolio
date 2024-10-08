@@ -1,6 +1,6 @@
-import { useNavContext } from "../contexts/useNavContext";
-import TechCard from "../components/TechCard";
-import technologies from "../data/tech.json";
+import { useNavContext } from "../../shared/contexts/useNavContext";
+import TechCard from "./TechCard";
+import technologies from "./tech.json";
 
 function Tech() {
   const { navRefs } = useNavContext();

@@ -1,4 +1,4 @@
-import { useNavContext } from "../contexts/useNavContext.ts";
+import { useNavContext } from "../../shared/contexts/useNavContext";
 
 function About() {
   const { navRefs } = useNavContext();
