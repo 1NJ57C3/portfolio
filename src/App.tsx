@@ -1,4 +1,4 @@
-import { NavProvider } from "./shared/contexts/navContext";
+import { NavProvider } from "./shared/contexts/NavContext";
 // import Header from "./features/header/Header";
 import Landing from "./features/landing/Landing";
 import About from "./features/about/About";
