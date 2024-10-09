@@ -8,6 +8,7 @@
   filter: grayscale(0);
   transition: 0.5s;
   margin: 0 1rem;
+  object-fit: contain;
 }
 
 .TechCard img.hovered {
