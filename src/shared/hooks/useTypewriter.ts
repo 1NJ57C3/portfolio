@@ -36,6 +36,7 @@ export function useTypewriter<T extends ModeType>(input: InputType<T>, mode: T =
       return () => clearTimeout(timeout);
     }
 
+    // * Initial Delay logic
     if (index === 0 && initDelayedChars) {
       const initTimeout = setTimeout(renderOutput, initDelay);
       return () => clearTimeout(initTimeout);
