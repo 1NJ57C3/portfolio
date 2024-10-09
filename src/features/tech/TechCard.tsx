@@ -11,24 +11,43 @@ interface TechCardProps {
   imgWidth: string;
 }
 
-function TechCard({ name, logo, website, category, associations, confidence, imgWidth }: TechCardProps) {
+function TechCard({
+  name,
+  logo,
+  // website,
+  // category,
+  // associations,
+  // confidence,
+  imgWidth,
+}: TechCardProps) {
   const [hovered, setHovered] = useState(false);
 
   function handleMouseEnter() {
     setHovered(() => true);
   }
+
   function handleMouseLeave() {
     setHovered(() => false);
   }
 
   return (
-    <div className="TechCard" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
-      <img className={hovered ? "hovered" : ""} src={logo} alt={name} height={imgWidth} width={imgWidth} />
+    <div
+      className="TechCard"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <img
+        className={hovered ? "hovered" : ""}
+        src={logo}
+        alt={name}
+        height={imgWidth}
+        width={imgWidth}
+      />
       <strong>
         <p className={hovered ? "hovered" : ""}>{name}</p>
       </strong>
     </div>
-  )
+  );
 }
 
 export default TechCard;
