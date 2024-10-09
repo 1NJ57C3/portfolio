@@ -122,7 +122,7 @@
   },
   {
     "name": "BeautifulSoup",
-    "logo": "",
+    "logo": "src/assets/beautifulsoup-logo.png",
     "website": "https://www.crummy.com/software/BeautifulSoup/",
     "category": ["library", "web scraping"],
     "associations": ["Python", "BeautifulSoup"],
@@ -132,25 +132,9 @@
     "name": "Selenium",
     "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/selenium/selenium-original.svg",
     "website": "https://www.selenium.dev/",
-    "category": ["utility"],
+    "category": ["framework"],
     "associations": ["Python", "BeautifulSoup"],
     "confidence": 1
-  },
-  {
-    "name": "Git",
-    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/git/git-original.svg",
-    "website": "https://git-scm.com/",
-    "category": ["utility", "version control"],
-    "associations": ["Git"],
-    "confidence": 2
-  },
-  {
-    "name": "Markdown",
-    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/markdown/markdown-original.svg",
-    "website": "https://daringfireball.net/projects/markdown/",
-    "category": ["utility", "markup"],
-    "associations": ["Markdown"],
-    "confidence": 3
   },
   {
     "name": "Visual Studio Code",
@@ -167,5 +151,21 @@
     "category": ["utility", "build"],
     "associations": ["JavaScript", "TypeScript", "React"],
     "confidence": 2
+  },
+  {
+    "name": "Git",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/git/git-original.svg",
+    "website": "https://git-scm.com/",
+    "category": ["utility", "version control"],
+    "associations": ["Git"],
+    "confidence": 2
+  },
+  {
+    "name": "Markdown",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/markdown/markdown-original.svg",
+    "website": "https://daringfireball.net/projects/markdown/",
+    "category": ["utility", "markup"],
+    "associations": ["Markdown"],
+    "confidence": 3
   }
 ]
