@@ -1,6 +1,7 @@
 import { useNavContext } from "../../shared/contexts/useNavContext";
 import ProjectCard from "./ProjectCard";
 import projects from "./projects.json";
+import "./Projects.css";
 
 function Projects() {
   const { navRefs } = useNavContext();

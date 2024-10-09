@@ -1,4 +1,5 @@
 import { useNavContext } from "../../shared/contexts/useNavContext";
+import "./About.css";
 
 function About() {
   const { navRefs } = useNavContext();
