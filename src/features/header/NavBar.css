@@ -1,0 +1,8 @@
+.NavBar ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 0;
+  padding-right: var(--header-padding-x);
+  list-style-type: none;
+}

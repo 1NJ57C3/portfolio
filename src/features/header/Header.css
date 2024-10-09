@@ -1,0 +1,11 @@
+.Header {
+  background: linear-gradient(var(--layout-bg-color-primary) 74%, var(--layout-bg-color-secondary));
+  backdrop-filter: blur(0.27rem);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+.Landing {
+  display: flex;
+  flex: 1 0 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.Landing p {
+  font-weight: bold;
+}
