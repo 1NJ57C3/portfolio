@@ -13,7 +13,7 @@
   },
   {
     "name": "Blueprint Thing",
-    "description": "A blueprinting application to draw building schematics for voxel-based video games such as Enshrouded and Minecraft. Currently in the MVP/proof-of-concept stage.",
+    "description": "A blueprinting application for planning and drawing building schematics for voxel-based video games such as Enshrouded and Minecraft. Currently in the “completed” MVP/proof-of-concept stage.",
     "tech": ["React.js"],
     "urls": {
       "repo": "https://github.com/1NJ57C3/blueprint-thing",
