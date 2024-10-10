@@ -1,6 +1,7 @@
 :root {
   --layout-bg-color-primary: #121212B4;
   --layout-bg-color-secondary: #0c081a6a;
+  --layout-bg-color-tertiary: #060606;
   --nav-hover-bg-color: #00000038;
   --nav-hover-text-color: #969696;
   --nav-hover-accent-color: #9617eb;

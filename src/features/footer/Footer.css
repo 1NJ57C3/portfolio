@@ -1,5 +1,5 @@
 .Footer {
-  background: linear-gradient(var(--layout-bg-color-secondary), var(--layout-bg-color-primary) 74%);
+  background: linear-gradient(var(--layout-bg-color-secondary), var(--layout-bg-color-primary) 74%, var(--layout-bg-color-tertiary));
   color: #888;
   display: flex;
   flex-direction: column;
