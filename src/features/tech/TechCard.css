@@ -7,7 +7,7 @@
 .TechCard img {
   filter: grayscale(0);
   transition: 0.5s;
-  margin: 0 1rem;
+  margin: 0.75rem 1rem;
   object-fit: contain;
 }
 
