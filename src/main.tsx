@@ -1,8 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import App from './App.tsx'
 import './index.css'
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import "./shared/styles/global.css";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
