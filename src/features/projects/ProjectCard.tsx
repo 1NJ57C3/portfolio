@@ -1,4 +1,4 @@
-import styles from "./ProjectCard.module.css";
+import "./ProjectCard.css";
 
 interface ProjectCardProps {
   name: string;
@@ -29,17 +29,17 @@ function ProjectCard({ name, description, tech, urls, images }: ProjectCardProps
   }
 
   return (
-    <div className={styles.ProjectCard}>
-      <article className={styles.content}>
-        <section className={styles.screenshots}>
+    <div className="ProjectCard">
+      <article className="content">
+        <section className="screenshots">
           {renderImages()}
         </section>
-        <div className={styles.vr} />
-        <section className={styles.info}>
+        <div className="vr" />
+        <section className="info">
           <header>
             <h2>{name}</h2>
           </header>
-          <p className={styles.description}>{description}</p>
+          <p className="description">{description}</p>
           <p>{tech.join(", ")}</p>
           <div>
             <a href={urls.repo}>Repo</a> |{" "}
