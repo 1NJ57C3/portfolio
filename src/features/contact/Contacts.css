@@ -1,0 +1,23 @@
+.Contacts .main {
+  display: flex;
+  align-items: center;
+}
+
+.Contacts .outro {
+  text-align: left;
+  max-width: 60%;
+}
+
+.Contacts .links {
+  margin: 1rem;
+  margin-top: 2rem;
+  flex: 1 0 40%;
+}
+
+.Contacts span {
+  padding: 0.5rem 1rem;
+}
+.Contacts span + span {
+  text-align: center;
+  border-left: solid 0.5px grey;
+}
