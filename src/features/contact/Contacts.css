@@ -1,3 +1,7 @@
+.Contacts {
+  margin-bottom: 2.5rem;
+}
+
 .Contacts .main {
   display: flex;
   align-items: center;
@@ -9,8 +13,7 @@
 }
 
 .Contacts .links {
-  margin: 1rem;
-  margin-top: 2rem;
+  margin: 2rem;
   flex: 1 0 40%;
 }
 

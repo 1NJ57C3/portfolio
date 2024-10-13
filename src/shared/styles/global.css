@@ -1,6 +1,6 @@
 .vr {
-  /* vertical rule */
-    background: radial-gradient(circle, #06060686, #00000000);
-    height: 83%;
-    width: 1.35px;
-  }
+/* vertical rule */
+  background: radial-gradient(circle, #06060686, #00000000);
+  height: 83%;
+  width: 1.35px;
+}
