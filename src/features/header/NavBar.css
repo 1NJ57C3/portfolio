@@ -1,8 +1,14 @@
+.NavBar {
+  height: 70%;
+  width: 40%;
+}
+
 .NavBar ul {
+  list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding-left: 0;
   padding-right: var(--header-padding-x);
-  list-style-type: none;
+  height: 100%;
 }

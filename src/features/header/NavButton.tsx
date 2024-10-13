@@ -1,4 +1,6 @@
+// import { useState } from "react";
 import { useNavContext } from "../../shared/contexts/useNavContext";
+import "./NavButton.css";
 
 interface NavButtonProps {
   navItem: string;
@@ -6,6 +8,7 @@ interface NavButtonProps {
 
 function NavButton({ navItem }: NavButtonProps) {
   const { navRefs } = useNavContext();
+  // const [selected, setSelected] = useState(false); // TODO use observers for this instead; better interactivity/accuracy
 
   function scrollIntoView(target: string) {
     if (navRefs.current) {
@@ -22,7 +25,7 @@ function NavButton({ navItem }: NavButtonProps) {
   }
 
   return (
-    <li className="nav-item">
+    <li className={"nav-item" /* + (selected ? " selected" : "") */}>
       <button onClick={(e) => handleClick(e, navItem)}>{navItem}</button>
       <span className="nav-accent" />
     </li>
