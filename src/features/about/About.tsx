@@ -16,6 +16,18 @@ function About() {
       <header>
         <h1 className="page-header">About Me</h1>
       </header>
+      <figure className="bio-image">
+        <img
+          src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWV3ZmJhN3ppZW50dTJ4ZTdvYjZqc3c3enJwcW5lZHNoMGQ5dHM1eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MbGf76uzTC5JM0tVRV/giphy.gif"
+          alt="cartoon man looking into mirror reflecting dumpster fire"
+          width="280"
+        />
+        <figcaption>
+          <a href="https://giphy.com/gifs/meme-mirror-dumpster-fire-MbGf76uzTC5JM0tVRV">
+            via GIPHY
+          </a>
+        </figcaption>
+      </figure>
       <section className="bio">
         <p>
           Hello. My handle is 1NJ57C3 (read as &ldquo;Injustice&rdquo;). Some of
