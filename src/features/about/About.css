@@ -1,6 +1,9 @@
 .About {
-  text-align: left;
   margin-bottom: 4rem;
+}
+
+.bio {
+  text-align: left;
 }
 
 .bio-image {
