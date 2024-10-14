@@ -1,8 +1,18 @@
+import { useNavContext } from "../../shared/contexts/useNavContext";
 import "./Contacts.css";
 
 function Contacts() {
+  const { navRefs } = useNavContext();
+
   return (
-    <article className="Contacts">
+    <article
+      className="Contacts"
+      ref={(element) => {
+        if (element) {
+          navRefs.current = { ...navRefs.current, Contact: element };
+        }
+      }}
+    >
       <header>
         <h1 className="page-header">Contact</h1>
       </header>
