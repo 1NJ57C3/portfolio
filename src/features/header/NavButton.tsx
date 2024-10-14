@@ -10,9 +10,16 @@ function NavButton({ navItem }: NavButtonProps) {
   const { navRefs } = useNavContext();
   // const [selected, setSelected] = useState(false); // TODO use observers for this instead; better interactivity/accuracy
 
-  function scrollIntoView(target: string) {
+  function scrollToSection(target: string) {
     if (navRefs.current) {
-      navRefs.current[target].scrollIntoView({ behavior: "smooth" });
+      const headerOffset = window.innerHeight * 0.0725;
+      const targetPosition =
+        navRefs.current[target].getBoundingClientRect().top + window.scrollY;
+
+      window.scrollTo({
+        top: targetPosition - headerOffset,
+        behavior: "smooth",
+      });
     }
   }
 
@@ -21,7 +28,7 @@ function NavButton({ navItem }: NavButtonProps) {
     navItem: string
   ) {
     e.preventDefault();
-    scrollIntoView(navItem);
+    scrollToSection(navItem);
   }
 
   return (
