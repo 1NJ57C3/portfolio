@@ -122,7 +122,7 @@
   },
   {
     "name": "BeautifulSoup",
-    "logo": "src/assets/beautifulsoup-logo.png",
+    "logo": "https://github.com/1NJ57C3/portfolio/blob/main/src/assets/beautifulsoup-logo.png?raw=true",
     "website": "https://www.crummy.com/software/BeautifulSoup/",
     "category": ["library", "web scraping"],
     "associations": ["Python", "BeautifulSoup"],
@@ -146,7 +146,7 @@
   },
   {
     "name": "Vite",
-    "logo": "../../public/vite.svg",
+    "logo": "/vite.svg",
     "website": "https://vite.dev/",
     "category": ["utility", "build"],
     "associations": ["JavaScript", "TypeScript", "React"],
