@@ -42,3 +42,11 @@
 .ProjectCard h2 {
   margin-top: 0;
 }
+
+.ProjectCard span {
+  padding: 0.4rem 0.65rem;
+  text-align: center;
+}
+.ProjectCard span + span {
+  border-left: solid 0.8px #06060686;
+}

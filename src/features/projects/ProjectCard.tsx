@@ -41,10 +41,14 @@ function ProjectCard({ name, description, tech, urls, images }: ProjectCardProps
           </header>
           <p className="description">{description}</p>
           <p>{tech.join(", ")}</p>
-          <div>
-            <a href={urls.repo}>Repo</a> |{" "}
-            {urls.demo ? <a href={urls.demo}>Demo</a> : "Demo"}
-          </div>
+          <section className="links">
+            <span>
+              <a href={urls.repo}>Repo</a>
+            </span>
+            <span>
+              {urls.demo ? <a href={urls.demo}>Demo</a> : "Demo"}
+            </span>
+          </section>
         </section>
       </article>
     </div>
