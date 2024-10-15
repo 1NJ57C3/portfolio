@@ -61,7 +61,7 @@ function About() {
           and vocal trance, if you&rsquo;re savvy), or playing guitar (rather
           poorly). You might also find me at the archery range or in a swimming
           pool to clear my mind, although there&rsquo;s nothing better than
-          driving... probably a little too fast.
+          driving... probably a little <em>too</em> fast.
         </p>
       </section>
     </article>
