@@ -24,6 +24,14 @@
   --header-padding: var(--header-padding-y) var(--header-padding-x);
   --header-padding-x-offset: calc(2 * var(--header-padding-x));
   --project-card-padding: 1.25rem;
+
+  /* * redesign variables */
+  --bg-base: #171b20;
+  --bg-gradient: linear-gradient(225deg, #212a3a, #171a1f);
+  --bg-shadow-light: 1.2rem -1.2rem 2.5rem #212a3a;
+  --bg-shadow-light-accent: -0.15rem 0.15rem 0.4rem #283347 inset;
+  --bg-shadow-dark: -1.2rem 1.2rem 2.5rem #111010;
+  --bg-border: 1.5px ridge transparent;
 }
 
 a {
