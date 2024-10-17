@@ -1,5 +1,10 @@
 .Contacts {
-  margin-bottom: 2.5rem;
+  background: var(--bg-gradient);
+  border: var(--bg-border);
+  border-radius: 1.15rem;
+  margin: 4rem 0;
+  padding: 4rem 7.5%;
+  box-shadow: var(--bg-shadow-dark), var(--bg-shadow-light), var(--bg-shadow-light-accent);
 }
 
 .Contacts .main {
@@ -10,10 +15,11 @@
 .Contacts .outro {
   text-align: left;
   max-width: 60%;
+  padding-right: 1rem;
 }
 
 .Contacts .links {
-  margin: 2rem;
+  margin-top: 2rem;
   flex: 1 0 40%;
 }
 

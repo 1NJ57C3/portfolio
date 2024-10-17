@@ -1,13 +1,14 @@
 .ProjectCard {
-  background-color: #ffffff10;
+  background: var(--bg-gradient);
+  border: var(--bg-border);
   border-radius: 0.75rem;
   margin: 1.5rem 0;
-  padding: 1rem;
+  padding: 3.25rem;
+  padding-left: var(--project-card-padding);
+  box-shadow: var(--bg-shadow-dark), var(--bg-shadow-light), var(--bg-shadow-light-accent);
 }
 
 .ProjectCard .content {
-  background-color: #ffffff10;
-  border-radius: 0.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 var(--project-card-padding);
+  padding-right: var(--project-card-padding);
   width: 30%;
 }
 
@@ -31,7 +32,7 @@
 .ProjectCard section.info {
   display: flex;
   flex-direction: column;
-  padding: var(--project-card-padding);
+  padding-left: var(--project-card-padding);
   width: 70%;
 }
 
