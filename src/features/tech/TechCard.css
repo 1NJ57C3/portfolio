@@ -2,18 +2,51 @@
   display: inline-block;
   position: relative;
   text-align: center;
+
+  /* background: linear-gradient(225deg, #212a3a, #181b21); */
+  /* background: linear-gradient(225deg, #87ceeb, #6495ed); */
+  /* background: #191970; */
+  /* background: linear-gradient(200deg, #7c18c3cc, #00000000 70.71%), linear-gradient(280deg, #454597cc, #00000000 70.71%), linear-gradient(110deg, #e6e6facc, #00000000 70.71%); */
+  /* background: linear-gradient(200deg, #e6e6facc, #00000000 70.71%), linear-gradient(280deg, #454597cc, #00000000 70.71%), linear-gradient(110deg, #470c9bcc, #00000000 70.71%); */
+  /* background: linear-gradient(200deg, #e6e6fa7f, #00000000 70.71%), linear-gradient(280deg, #4545977f, #00000000 70.71%), linear-gradient(110deg, #3d0c837f, #00000000 70.71%); */
+  backdrop-filter: blur(0.27rem);
+  /* border: 1px solid #30415b; */
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  /* box-shadow: -0.6rem 0.6rem 1.5rem #111010, 0.1rem -0.1rem 0.3rem #212a3a, var(--bg-shadow-light-accent); */
+  /* box-shadow: -0.6rem 0.6rem 1rem #ff1010, -0rem 0rem 2.25rem #43046f inset; */
+  height: fit-content;
+  width: fit-content;
+  margin: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 0 1rem #5e70f9 inset;
+  z-index: 0;
+}
+
+.TechCard::before {
+  --techcard-shadow-height: 100%;
+  --techcard-shadow-width: 100%;
+  content: '';
+  position: absolute;
+  top: calc((100% - var(--techcard-shadow-height))/2);
+  left: calc((100% - var(--techcard-shadow-width))/2);
+  border-radius: inherit;
+  height: var(--techcard-shadow-height);
+  width: var(--techcard-shadow-width);
+  box-shadow: 0 0 1rem #4663c9, 0 0 1.75rem #4663c9 inset;
+  z-index: -1;
+  filter: drop-shadow(0 0 1rem #3258dd);
 }
 
 .TechCard img {
-  filter: grayscale(0);
-  transition: 0.5s;
-  margin: 0.75rem 1rem;
+  filter: drop-shadow(0.15rem -0.15rem 0.225rem #30415b) drop-shadow(-0.2rem 0.2rem 0.3rem #000000);
   object-fit: contain;
+  transition: 0.5s;
 }
 
 .TechCard img.hovered {
-  background-color: #ffffff23;
-  border-radius: 0.8rem;
+  /* background-color: #ffffff23; */
+  /* border-radius: 0.8rem; */
   filter: grayscale(95%) blur(0.27rem);
   transition: 0.5s;
 }
