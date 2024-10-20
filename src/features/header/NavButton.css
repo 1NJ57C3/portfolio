@@ -17,7 +17,7 @@
 .selected > .nav-accent,
 .nav-item:hover > .nav-accent,
 .nav-item button:focus + .nav-accent {
-  width: 100%;
+  width: 98%;
 }
 
 .nav-item button {
