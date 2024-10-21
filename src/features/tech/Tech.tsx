@@ -40,16 +40,28 @@ function Tech() {
         <p>Some of the various technologies I&rsquo;ve worked with include:</p>
       </header>
       <section>
-        <h2>Languages</h2>
-        {languages}
+        <header>
+          <h2>Languages</h2>
+        </header>
+        <div className="card-wrapper">
+          {languages}
+        </div>
       </section>
       <section>
-        <h2>Libraries/Frameworks</h2>
-        {tech}
+        <header>
+          <h2>Libraries/Frameworks</h2>
+        </header>
+        <div className="card-wrapper">
+          {tech}
+        </div>
       </section>
       <section>
-        <h2>Utilities</h2>
-        {utilities}
+        <header>
+          <h2>Utilities</h2>
+        </header>
+        <div className="card-wrapper">
+          {utilities}
+        </div>
       </section>
     </article>
   );
