@@ -2,53 +2,76 @@
   display: inline-block;
   position: relative;
   text-align: center;
-
-  /* background: linear-gradient(225deg, #212a3a, #181b21); */
-  /* background: linear-gradient(225deg, #87ceeb, #6495ed); */
-  /* background: #191970; */
-  /* background: linear-gradient(200deg, #7c18c3cc, #00000000 70.71%), linear-gradient(280deg, #454597cc, #00000000 70.71%), linear-gradient(110deg, #e6e6facc, #00000000 70.71%); */
-  /* background: linear-gradient(200deg, #e6e6facc, #00000000 70.71%), linear-gradient(280deg, #454597cc, #00000000 70.71%), linear-gradient(110deg, #470c9bcc, #00000000 70.71%); */
-  /* background: linear-gradient(200deg, #e6e6fa7f, #00000000 70.71%), linear-gradient(280deg, #4545977f, #00000000 70.71%), linear-gradient(110deg, #3d0c837f, #00000000 70.71%); */
-  backdrop-filter: blur(0.27rem);
-  /* border: 1px solid #30415b; */
+  background: linear-gradient(20deg, #e6e6fa38, transparent 50.71%),
+    linear-gradient(200deg, #e6e6fa38, transparent 54.71%),
+    linear-gradient(70deg, #e6e6fa18, transparent 52.71%),
+    linear-gradient(250deg, #e6e6fa18, transparent 52.71%);
+  /* backdrop-filter: blur(0.27rem); */
   border: 1px solid transparent;
   border-radius: 0.75rem;
-  /* box-shadow: -0.6rem 0.6rem 1.5rem #111010, 0.1rem -0.1rem 0.3rem #212a3a, var(--bg-shadow-light-accent); */
-  /* box-shadow: -0.6rem 0.6rem 1rem #ff1010, -0rem 0rem 2.25rem #43046f inset; */
+  /* box-shadow: -0.6rem 0.6rem 1rem #ff1010, -0rem 0rem 2.25rem #43046f inset, 0.15rem -0.15rem 0.4rem #111010b3 inset, -0.15rem 0.15rem 0.4rem #283347d9 inset; */
+  box-shadow: -0.6rem 0.6rem 1.5rem #111010, 0.1rem -0.1rem 0.3rem #212a3a,
+    0.15rem -0.15rem 0.4rem #111010d9 inset,
+    -0.15rem 0.15rem 0.4rem #8fa4ccd9 inset;
   height: fit-content;
   width: fit-content;
-  margin: 0.75rem;
+  margin: 0.6rem;
   padding: 1.25rem;
-  box-shadow: 0 0 1rem #5e70f9 inset;
   z-index: 0;
+  transition: 0.75s ease-in;
 }
 
 .TechCard::before {
   --techcard-shadow-height: 100%;
   --techcard-shadow-width: 100%;
-  content: '';
+  content: "";
   position: absolute;
-  top: calc((100% - var(--techcard-shadow-height))/2);
-  left: calc((100% - var(--techcard-shadow-width))/2);
+  top: calc((100% - var(--techcard-shadow-height)) / 2);
+  left: calc((100% - var(--techcard-shadow-width)) / 2);
   border-radius: inherit;
+  box-shadow: 0 0 transparent;
   height: var(--techcard-shadow-height);
   width: var(--techcard-shadow-width);
-  box-shadow: 0 0 1rem #4663c9, 0 0 1.75rem #4663c9 inset;
   z-index: -1;
-  filter: drop-shadow(0 0 1rem #3258dd);
+  transition: 0.75s ease-in;
+}
+
+.TechCard:hover {
+  /* box-shadow: 0 0 0.4rem #bed9f1 inset; */
+  background: linear-gradient(20deg, #454597a3, transparent 52.71%),
+    linear-gradient(200deg, #454597a3, transparent 52.71%),
+    linear-gradient(70deg, #454597a3, transparent 52.71%),
+    linear-gradient(250deg, #454597a3, transparent 52.71%);
+  border: 1px solid #6e7ef260;
+  box-shadow: 0.15rem -0.15rem 0.4rem #8fa4cc90 inset,
+    -0.15rem 0.15rem 0.4rem #8fa4cc90 inset, 0 0 0.15rem #6e7ef218 inset,
+    0 0 0.3rem #6e7ef218 inset, 0 0 0.6rem #6e7ef218 inset;
+  transition: 0.75s ease-out;
+}
+
+.TechCard:hover::before {
+  box-shadow: 0 0 1rem #4663c9, 0 0 1rem #4663c9 inset;
+  filter: drop-shadow(0 0 1rem #3258dd90);
+  transition: 0.75s ease-out;
 }
 
 .TechCard img {
-  filter: drop-shadow(0.15rem -0.15rem 0.225rem #30415b) drop-shadow(-0.2rem 0.2rem 0.3rem #000000);
+  filter: drop-shadow(0.15rem -0.15rem 0.225rem #30415b)
+    drop-shadow(-0.15rem 0.15rem 0.225rem #111010);
   object-fit: contain;
-  transition: 0.5s;
+  transition: 0.75s ease-in;
 }
 
 .TechCard img.hovered {
-  /* background-color: #ffffff23; */
-  /* border-radius: 0.8rem; */
-  filter: grayscale(95%) blur(0.27rem);
-  transition: 0.5s;
+  filter: drop-shadow(0.15rem -0.15rem 0.2rem #6e7ef22b)
+    drop-shadow(-0.15rem 0.15rem 0.2rem #2e32372b)
+    /* drop-shadow(0.15rem -0.15rem 0.225rem #6e7ef22b) drop-shadow(-0.15rem 0.15rem 0.225rem #2e32372b) */
+    drop-shadow(0.15rem -0.15rem 0.25rem #6e7ef22b)
+    drop-shadow(-0.15rem 0.15rem 0.25rem #2e32372b)
+    drop-shadow(0 0 0.1rem #171b20a3)
+    /* drop-shadow(0 0 0.10rem #171b20a3) */
+    drop-shadow(0 0 0.15rem #171b20a3);
+  transition: 0.75s ease-out;
 }
 
 .TechCard p {
