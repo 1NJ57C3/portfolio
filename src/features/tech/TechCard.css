@@ -10,8 +10,8 @@
   /* backdrop-filter: blur(0.27rem); */
   border: 1px solid transparent;
   border-radius: 0.75rem;
-  box-shadow: -0.6rem 0.6rem 1.5rem #111010, 0.1rem -0.1rem 0.3rem #212a3a,
-    0.15rem -0.15rem 0.4rem #111010d9 inset,
+  box-shadow: -0.6rem 0.6rem 1.5rem #111010cc, 0.1rem -0.1rem 0.3rem #212a3acc,
+    0.15rem -0.15rem 0.4rem #111010cc inset,
     -0.15rem 0.15rem 0.4rem #8fa4ccd9 inset;
   height: fit-content;
   width: fit-content;
@@ -30,21 +30,21 @@
   z-index: -1;
   border-radius: inherit;
   box-shadow: 0 0 transparent;
+  filter: drop-shadow(0 0 transparent);
   height: var(--techcard-shadow-height);
   width: var(--techcard-shadow-width);
   transition: 0.65s ease-in;
 }
 
 .TechCard:hover {
-  background: linear-gradient(20deg, #454597a3, transparent 52.71%),
-    linear-gradient(200deg, #454597a3, transparent 52.71%),
-    linear-gradient(70deg, #454597a3, transparent 52.71%),
-    linear-gradient(250deg, #454597a3, transparent 52.71%);
+  background: linear-gradient(20deg, #454597a3, transparent 50.71%),
+    linear-gradient(200deg, #454597a3, transparent 54.71%),
+    linear-gradient(70deg, #45459783, transparent 52.71%),
+    linear-gradient(250deg, #45459783, transparent 52.71%);
   border: 1px solid #6e7ef260;
-  box-shadow: 0.15rem -0.15rem 0.4rem #8fa4cc90 inset,
-    -0.15rem 0.15rem 0.4rem #8fa4cc90 inset, 0 0 0.15rem #6e7ef218 inset,
-    0 0 0.3rem #6e7ef218 inset, 0 0 0.6rem #6e7ef218 inset,
-    0 0 3rem #6e7ef240 inset;
+  box-shadow: 0 0 0.6rem #6e7ef218 inset, 0 0 1.5rem #6e7ef230 inset,
+    0.15rem -0.15rem 0.4rem #8fa4cc90 inset,
+    -0.15rem 0.15rem 0.4rem #8fa4cc90 inset;
   transition: 0.65s ease-out;
 }
 
@@ -61,7 +61,7 @@
   transition: 0.65s ease-in;
 }
 
-.TechCard img:hover {
+.TechCard:hover img {
   filter: drop-shadow(0.15rem -0.15rem 0.2rem #6e7ef22b)
     drop-shadow(-0.15rem 0.15rem 0.2rem #2e32372b)
     drop-shadow(0.15rem -0.15rem 0.25rem #6e7ef22b)
