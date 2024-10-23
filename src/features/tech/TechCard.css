@@ -17,7 +17,7 @@
   width: fit-content;
   margin: 0.6rem;
   padding: 1.25rem;
-  transition: 0.75s ease-in;
+  transition: 0.65s ease-in;
 }
 
 .TechCard::before {
@@ -32,7 +32,7 @@
   box-shadow: 0 0 transparent;
   height: var(--techcard-shadow-height);
   width: var(--techcard-shadow-width);
-  transition: 0.75s ease-in;
+  transition: 0.65s ease-in;
 }
 
 .TechCard:hover {
@@ -45,29 +45,29 @@
     -0.15rem 0.15rem 0.4rem #8fa4cc90 inset, 0 0 0.15rem #6e7ef218 inset,
     0 0 0.3rem #6e7ef218 inset, 0 0 0.6rem #6e7ef218 inset,
     0 0 3rem #6e7ef240 inset;
-  transition: 0.75s ease-out;
+  transition: 0.65s ease-out;
 }
 
 .TechCard:hover::before {
   box-shadow: 0 0 1rem #4663c9, 0 0 1rem #4663c9 inset;
   filter: drop-shadow(0 0 1rem #3258dd90);
-  transition: 0.75s ease-out;
+  transition: 0.65s ease-out;
 }
 
 .TechCard img {
   filter: drop-shadow(0.15rem -0.15rem 0.225rem #30415b)
     drop-shadow(-0.15rem 0.15rem 0.225rem #111010);
   object-fit: contain;
-  transition: 0.75s ease-in;
+  transition: 0.65s ease-in;
 }
 
-.TechCard img.hovered {
+.TechCard img:hover {
   filter: drop-shadow(0.15rem -0.15rem 0.2rem #6e7ef22b)
     drop-shadow(-0.15rem 0.15rem 0.2rem #2e32372b)
     drop-shadow(0.15rem -0.15rem 0.25rem #6e7ef22b)
     drop-shadow(-0.15rem 0.15rem 0.25rem #2e32372b)
-    drop-shadow(0 0 0.1rem #171b20a3) drop-shadow(0 0 0.15rem #171b20a3);
-  transition: 0.75s ease-out;
+    drop-shadow(0 0 0.1rem #171b2040) drop-shadow(0 0 0.15rem #171b20cc);
+  transition: 0.65s ease-out;
 }
 
 .TechCard p {
