@@ -43,6 +43,9 @@ function Contacts() {
           <a href="https://discord.com/users/194635295583371273">Discord</a>
         </span>
         <span>
+          <a href="https://github.com/1NJ57C3">GitHub</a>
+        </span>
+        <span>
           <a href="https://twitter.com/1NJ57C3">Twitter</a>
         </span>
       </section>
