@@ -31,11 +31,12 @@ function TechCard({
   }
 
   return (
-    <div
+    <article
       className="TechCard"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+      <div className="tech-card-bg" />
       <img
         className={hovered ? "hovered" : ""}
         src={logo}
@@ -46,7 +47,7 @@ function TechCard({
       <strong>
         <p className={hovered ? "hovered" : ""}>{name}</p>
       </strong>
-    </div>
+    </article>
   );
 }
 
