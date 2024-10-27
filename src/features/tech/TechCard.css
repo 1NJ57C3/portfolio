@@ -39,20 +39,21 @@
   opacity: 0%;
   z-index: -1;
   border-radius: inherit;
-  box-shadow: 0 0 transparent;
   background: linear-gradient(20deg, #454597a3, transparent 50.71%),
     linear-gradient(200deg, #454597a3, transparent 54.71%),
     linear-gradient(70deg, #45459783, transparent 52.71%),
     linear-gradient(250deg, #45459783, transparent 52.71%);
   border: 1px solid #6e7ef260;
-  box-shadow: 0.15rem -0.15rem 0.4rem #8fa4cc90 inset, -0.15rem 0.15rem 0.4rem #8fa4cc90 inset, 0 0 0.6rem #6e7ef218 inset, 0 0 3rem #6e7ef240 inset, 0 0 1rem #4663c9, 0 0 1rem #4663c9 inset;
+  box-shadow: 0.15rem -0.15rem 0.4rem #8fa4cc90 inset,
+    -0.15rem 0.15rem 0.4rem #8fa4cc90 inset, 0 0 0.6rem #6e7ef218 inset,
+    0 0 3rem #6e7ef240 inset, 0 0 1rem #4663c9, 0 0 1rem #4663c9 inset;
   filter: drop-shadow(0 0 1rem #3258dd90);
   height: 100%;
   width: 100%;
   transition: 0.65s ease-in;
 }
 
-.TechCard:hover .tech-card-bg{
+.TechCard:hover .tech-card-bg {
   opacity: 0%;
   transition: 0.65s ease-out;
 }
@@ -70,8 +71,7 @@
 }
 
 .TechCard:hover > img {
-  filter:
-    drop-shadow(0.15rem -0.15rem 0.25rem #5e6ac7bf)
+  filter: drop-shadow(0.15rem -0.15rem 0.25rem #5e6ac7bf)
     drop-shadow(-0.15rem 0.15rem 0.25rem #36475cbf)
     drop-shadow(0 0 0.15rem #171b20db);
   transition: 0.65s ease-out;
