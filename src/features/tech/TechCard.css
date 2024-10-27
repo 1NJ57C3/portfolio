@@ -59,11 +59,10 @@
 }
 
 .TechCard:hover > img {
-  filter: drop-shadow(0.15rem -0.15rem 0.2rem #6e7ef22b)
-    drop-shadow(-0.15rem 0.15rem 0.2rem #2e32372b)
-    drop-shadow(0.15rem -0.15rem 0.25rem #6e7ef22b)
-    drop-shadow(-0.15rem 0.15rem 0.25rem #2e32372b)
-    drop-shadow(0 0 0.1rem #171b2040) drop-shadow(0 0 0.15rem #171b20cc);
+  filter:
+    drop-shadow(0.15rem -0.15rem 0.25rem #5e6ac7bf)
+    drop-shadow(-0.15rem 0.15rem 0.25rem #36475cbf)
+    drop-shadow(0 0 0.15rem #171b20db);
   transition: 0.65s ease-out;
 }
 
