@@ -52,8 +52,8 @@
 }
 
 .TechCard img {
-  filter: drop-shadow(0.15rem -0.15rem 0.225rem #30415b)
-    drop-shadow(-0.15rem 0.15rem 0.225rem #111010);
+  filter: drop-shadow(0.15rem -0.15rem 0.225rem #e6e6fa38)
+    drop-shadow(-0.15rem 0.15rem 0.225rem #111010d1);
   object-fit: contain;
   transition: 0.65s ease-in;
 }
