@@ -21,17 +21,15 @@
 }
 
 .TechCard::before {
-  --techcard-shadow-height: 100%;
-  --techcard-shadow-width: 100%;
   content: "";
   position: absolute;
-  top: calc((100% - var(--techcard-shadow-height)) / 2);
-  left: calc((100% - var(--techcard-shadow-width)) / 2);
+  top: 0;
+  left: 0;
   z-index: -1;
   border-radius: inherit;
   box-shadow: 0 0 transparent;
-  height: var(--techcard-shadow-height);
-  width: var(--techcard-shadow-width);
+  height: 100%;
+  width: 100%;
   transition: 0.65s ease-in;
 }
 
@@ -42,8 +40,7 @@
     linear-gradient(250deg, #45459783, transparent 52.71%);
   border: 1px solid #6e7ef260;
   box-shadow: 0.15rem -0.15rem 0.4rem #8fa4cc90 inset,
-    -0.15rem 0.15rem 0.4rem #8fa4cc90 inset, 0 0 0.15rem #6e7ef218 inset,
-    0 0 0.3rem #6e7ef218 inset, 0 0 0.6rem #6e7ef218 inset,
+    -0.15rem 0.15rem 0.4rem #8fa4cc90 inset, 0 0 0.6rem #6e7ef218 inset,
     0 0 3rem #6e7ef240 inset;
   transition: 0.65s ease-out;
 }
