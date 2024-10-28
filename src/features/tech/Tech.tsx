@@ -9,7 +9,7 @@ function Tech() {
 
   const languages = technologies.map((technology, i) => {
     if (technology.category.includes("language")) {
-      return <TechCard {...technology} key={"tech" + i} imgWidth={imgWidth} />;
+      return <TechCard {...technology} key={"lang" + i} imgWidth={imgWidth} />;
     }
   });
   const tech = technologies.map((technology, i) => {
@@ -39,27 +39,27 @@ function Tech() {
         <h1 className="page-header">Skills & Technologies</h1>
         <p>Some of the various technologies I&rsquo;ve worked with include:</p>
       </header>
-      <section>
+      <section className="tech-section">
         <header>
           <h2>Languages</h2>
         </header>
-        <div className="card-wrapper">
+        <div className="card-tray">
           {languages}
         </div>
       </section>
-      <section>
+      <section className="tech-section">
         <header>
           <h2>Libraries/Frameworks</h2>
         </header>
-        <div className="card-wrapper">
+        <div className="card-tray">
           {tech}
         </div>
       </section>
-      <section>
+      <section className="tech-section">
         <header>
           <h2>Utilities</h2>
         </header>
-        <div className="card-wrapper">
+        <div className="card-tray">
           {utilities}
         </div>
       </section>
