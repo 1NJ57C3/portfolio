@@ -3,6 +3,23 @@ import "./Contacts.css";
 
 function Contacts() {
   const { navRefs } = useNavContext();
+  const contacts = [
+    { name: "Email", address: "mailto:hello@injustice.dev" },
+    {
+      name: "Discord",
+      address: "https://discord.com/users/194635295583371273",
+    },
+    { name: "Twitter", address: "https://twitter.com/1NJ57C3" },
+    { name: "GitHub", address: "https://github.com/1NJ57C3" },
+  ];
+
+  const contactElements = contacts.map(({name, address}, i) => {
+    return (
+      <span key={"contact" + i}>
+        <a href={address}>{name}</a>
+      </span>
+    )
+  })
 
   return (
     <article
@@ -36,18 +53,7 @@ function Contacts() {
         />
       </section>
       <section className="links">
-        <span>
-          <a href="mailto:hello@injustice.dev">Email</a>
-        </span>
-        <span>
-          <a href="https://discord.com/users/194635295583371273">Discord</a>
-        </span>
-        <span>
-          <a href="https://github.com/1NJ57C3">GitHub</a>
-        </span>
-        <span>
-          <a href="https://twitter.com/1NJ57C3">Twitter</a>
-        </span>
+        {contactElements}
       </section>
     </article>
   );
