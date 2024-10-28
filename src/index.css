@@ -17,7 +17,7 @@
   --layout-bg-color-tertiary: #060606;
   --nav-hover-bg-color: #00000038;
   --nav-hover-text-color: #969696;
-  --nav-hover-accent-color: #9617eb;
+  --nav-hover-accent-color: #9617eb80;
   --banner-heading-size: x-large;
   --header-padding-x: 2rem;
   --header-padding-y: 1.5rem;
@@ -28,10 +28,8 @@
   /* * redesign variables */
   --bg-base: #171b20;
   --bg-gradient: linear-gradient(225deg, #212a3a, #171a1f);
-  /* --bg-shadow-light: 1.2rem -1.2rem 2.5rem #212a3a; */
   --bg-shadow-light: 0.6rem -0.6rem 1.2rem #212a3a;
   --bg-shadow-light-accent: -0.15rem 0.15rem 0.4rem #283347 inset;
-  /* --bg-shadow-dark: -1.2rem 1.2rem 2.5rem #111010; */
   --bg-shadow-dark: -0.6rem 0.6rem 1.5rem #111010;
   --bg-border: 1.5px ridge transparent;
 }
