@@ -3,12 +3,15 @@
   border: var(--bg-border);
   border-radius: 1.15rem;
   margin: 4rem 0;
-  padding: 4rem 10%;
+  padding: 4rem 7.5%;
   box-shadow: var(--bg-shadow-dark), var(--bg-shadow-light), var(--bg-shadow-light-accent);
 }
 
-.Tech .card-wrapper {
-  /* background: var(--bg-gradient); */
+.Tech .tech-section + .tech-section {
+  margin-top: 2rem;
+}
+
+.Tech .card-tray {
   border-radius: 1.15rem;
   border: var(--bg-border);
   padding: 1rem;
