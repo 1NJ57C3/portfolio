@@ -11,15 +11,20 @@ function Contacts() {
     },
     { name: "Twitter", address: "https://twitter.com/1NJ57C3" },
     { name: "GitHub", address: "https://github.com/1NJ57C3" },
+    {
+      name: "Resume",
+      address:
+        "https://docs.google.com/document/d/e/2PACX-1vR9aiQ8RqWUFizzxToOVPbt-JLazdCMRdUFi8M0UmwDKf4Jy0wcEe4ZIhfCQTaEOUNTOlaXW-TCiCPD/pub",
+    },
   ];
 
-  const contactElements = contacts.map(({name, address}, i) => {
+  const contactElements = contacts.map(({ name, address }, i) => {
     return (
       <span key={"contact" + i}>
         <a href={address}>{name}</a>
       </span>
-    )
-  })
+    );
+  });
 
   return (
     <article
@@ -52,9 +57,7 @@ function Contacts() {
           height="200"
         />
       </section>
-      <section className="links">
-        {contactElements}
-      </section>
+      <section className="links">{contactElements}</section>
     </article>
   );
 }
