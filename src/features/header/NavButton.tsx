@@ -32,8 +32,10 @@ function NavButton({ navItem }: NavButtonProps) {
   }
 
   return (
-    <li className={"nav-item" /* + (selected ? " selected" : "") */}>
-      <button onClick={(e) => handleClick(e, navItem)}>{navItem}</button>
+    <li className={"nav-item"}>
+      <button className="nav-button" onClick={(e) => handleClick(e, navItem)}>
+        {navItem}
+      </button>
       <span className="nav-accent" />
     </li>
   );
