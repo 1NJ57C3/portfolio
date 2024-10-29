@@ -1,27 +1,18 @@
+:root {
+  --nav-hover-accent-width: 96%;
+  /* --nav-hover-bg-color: #171b20b9; */
+  --nav-hover-bg-color: linear-gradient(225deg, #212a3aa6, #171b30a6);
+  --nav-hover-bg-shadow-color: #00000038;
+}
+
 .nav-item {
   position: relative;
   height: 100%;
   width: 100%;
 }
 
-.nav-accent {
-  background-color: var(--nav-hover-accent-color);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1.5px;
-  width: 0%;
-  transition: 400ms;
-}
-
-.selected > .nav-accent,
-.nav-item:hover > .nav-accent,
-.nav-item button:focus + .nav-accent {
-  width: 98%;
-}
-
 .nav-item button {
-  background-color: #00000000;
+  background-color: transparent;
   border-radius: 0.25rem;
   border: 0;
   height: 100%;
@@ -34,9 +25,29 @@
   outline-style: none;
 }
 
-.nav-item button:hover {
-  background-color: var(--nav-hover-bg-color);
+.nav-item:hover > button,
+.nav-item button:focus {
+  background: var(--nav-hover-bg-color);
   color: var(--nav-hover-text-color);
-  box-shadow: 0 0 1.5rem var(--nav-hover-bg-color);
-  text-shadow: 0 0 1.5rem var(--nav-hover-text-color);
+  box-shadow: -0.15rem 0.15rem 0.3rem #283347b8 inset,
+    0.15rem -0.15rem 0.3rem #111010b8 inset, -0.15rem 0.15rem 0.3rem #111010b8;
+  text-shadow: 0 0 1.75rem var(--nav-hover-text-color);
+}
+
+.nav-accent {
+  position: absolute;
+  bottom: 0.35rem;
+  left: 0;
+  background-color: var(--nav-hover-accent-color);
+  border-radius: 75%;
+  height: 1.5px;
+  width: 0;
+  margin-left: calc((100% - var(--nav-hover-accent-width)) / 2);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.nav-item:hover > .nav-accent,
+.nav-item button:focus + .nav-accent {
+  width: var(--nav-hover-accent-width);
 }
