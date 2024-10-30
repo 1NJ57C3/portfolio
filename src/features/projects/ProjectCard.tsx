@@ -7,12 +7,13 @@ interface ProjectCardProps {
   urls: {
     repo: string;
     demo: string | null;
+    video: string;
   };
   images: string[];
 }
 
 function ProjectCard({ name, description, tech, urls, images }: ProjectCardProps) {
-  function renderImages() {
+  function renderPreview() {
     if (images.length) {
       { /*
         TODO preview slideshow
@@ -32,7 +33,7 @@ function ProjectCard({ name, description, tech, urls, images }: ProjectCardProps
     <div className="ProjectCard">
       <article className="content">
         <section className="screenshots">
-          {renderImages()}
+          {renderPreview()}
         </section>
         <div className="vr" />
         <section className="info">
@@ -48,6 +49,11 @@ function ProjectCard({ name, description, tech, urls, images }: ProjectCardProps
             <span>
               {urls.demo ? <a href={urls.demo}>Demo</a> : "Demo"}
             </span>
+            {urls.video && <span><a href={urls.video}>Video</a></span>}
+            {/*
+              // TODO - Rework into preview section once suitable video hosting service found
+                // ? Alternatively make short GIF clip for hover and link to video that way?
+            */}
           </section>
         </section>
       </article>
