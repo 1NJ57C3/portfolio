@@ -3,7 +3,8 @@ import "./Landing.css";
 
 function Landing(){
   const mainHeader = "‹injustice.dev/›";
-  const subHeader = "Under construction";
+  const subHeader = "Under construction.";
+  const disclaimer = "Best viewed on a computer or in landscape (for now).";
 
   return (
     <div className="Landing">
@@ -12,6 +13,7 @@ function Landing(){
           <h1>{useTypewriter(mainHeader)}</h1>
         </a>
         <h4>{useTypewriter(subHeader, "insert", mainHeader.length)}</h4>
+        <h5>{useTypewriter(disclaimer, "insert", mainHeader.length + subHeader.length)}</h5>
       </hgroup>
     </div>
   )
