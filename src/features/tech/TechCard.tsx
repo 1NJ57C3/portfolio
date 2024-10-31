@@ -38,7 +38,6 @@ function TechCard({
     >
       <div className="tech-card-bg" />
       <img
-        className={hovered ? "hovered" : ""}
         src={logo}
         alt={name}
         height={imgWidth}
