@@ -7,7 +7,7 @@ interface ProjectCardProps {
   urls: {
     repo: string;
     demo: string | null;
-    video: string;
+    video: string | null;
   };
   images: string[];
 }
