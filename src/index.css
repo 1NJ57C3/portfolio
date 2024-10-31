@@ -15,9 +15,11 @@
   --layout-bg-color-primary: #121212B4;
   --layout-bg-color-secondary: #0c081a6a;
   --layout-bg-color-tertiary: #060606;
-  --nav-hover-bg-color: #00000038;
+  --nav-hover-bg-color: linear-gradient(225deg, #212a3a9e, #171b309e);
+  --nav-hover-bg-shadow-color: #00000038;
   --nav-hover-text-color: #969696;
   --nav-hover-accent-color: #9617eb80;
+  --nav-hover-accent-width: 96%;
   --banner-heading-size: x-large;
   --header-padding-x: 2rem;
   --header-padding-y: 1.5rem;

@@ -1,11 +1,3 @@
-:root {
-  --nav-hover-accent-width: 96%;
-  /* --nav-hover-bg-color: #171b20b9; */
-  /* --nav-hover-bg-color: linear-gradient(225deg, #201f34a6, #171b30a6); */
-  --nav-hover-bg-color: linear-gradient(225deg, #212a3a9e, #171b309e);
-  --nav-hover-bg-shadow-color: #00000038;
-}
-
 .nav-item {
   position: relative;
   height: 100%;
