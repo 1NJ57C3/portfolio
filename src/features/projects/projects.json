@@ -1,5 +1,16 @@
 [
   {
+    "name": "The Marketplace Project",
+    "description": "A basic (mock) e-commerce website that features user authorization, product listings, filtering/sorting, shopping carts, and order processing.",
+    "tech": ["React.js", "Django"],
+    "urls": {
+      "repo": "https://github.com/1NJ57C3/the-marketplace-project",
+      "demo": null,
+      "video": null
+    },
+    "images": []
+  },
+  {
     "name": "Boring Weather App",
     "description": "My very first React Native app. A minimalist mobile application that fetches and parses current weather, air quality, and weather forecast data from OpenWeatherMap.org’s API services into a user-friendly interface.",
     "tech": ["React Native"],
