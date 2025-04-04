@@ -8,7 +8,7 @@ This project was built using [Vite](https://vitejs.dev) and [PnPM](https://pnpm.
 
 Open your Command Line, navigate to this project's root folder, and run the following commands:
 
-`PnPM`:
+`pnpm`:
 
 ```shell
 pnpm install
