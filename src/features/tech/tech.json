@@ -40,6 +40,14 @@
     "confidence": 3
   },
   {
+    "name": "C++",
+    "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/cplusplus/cplusplus-original.svg",
+    "website": "https://cplusplus.com/",
+    "category": ["language", "frontend", "backend"],
+    "associations": ["C"],
+    "confidence": 2
+  },
+  {
     "name": "Python",
     "logo": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/python/python-original.svg",
     "website": "https://python.org/",
