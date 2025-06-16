@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --base-bg-color-primary: #121212B4;
+  --base-bg-color-primary: #121212b4;
   --base-bg-color-secondary: #0c081a6a;
   --base-bg-color-tertiary: #060606;
 
@@ -22,9 +22,20 @@
   --nav-hover-accent-color: #9617eb80;
   --nav-hover-accent-width: 96%;
 
-  --header-theme-bg: linear-gradient(var(--base-bg-color-tertiary) 10%, var(--base-bg-color-primary) 74%, var(--base-bg-color-secondary));
+  --header-theme-bg: linear-gradient(
+    var(--base-bg-color-tertiary) 10%,
+    var(--base-bg-color-primary) 74%,
+    var(--base-bg-color-secondary)
+  );
   --header-theme-bg-blur: blur(0.27rem);
   --header-layout-height: 7.25%;
+
+  --footer-theme-bg: linear-gradient(
+    var(--base-bg-color-secondary),
+    var(--base-bg-color-primary) 74%,
+    var(--base-bg-color-tertiary)
+  );
+  --footer-theme-color: #888;
 
   --banner-heading-size: x-large;
   --header-padding-x: 2rem;

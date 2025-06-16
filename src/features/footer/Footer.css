@@ -1,6 +1,6 @@
 .Footer {
-  background: linear-gradient(var(--base-bg-color-secondary), var(--base-bg-color-primary) 74%, var(--base-bg-color-tertiary));
-  color: #888;
+  background: var(--footer-theme-bg);
+  color: var(--footer-theme-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
