@@ -12,9 +12,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --layout-bg-color-primary: #121212B4;
-  --layout-bg-color-secondary: #0c081a6a;
-  --layout-bg-color-tertiary: #060606;
+  --base-bg-color-primary: #121212B4;
+  --base-bg-color-secondary: #0c081a6a;
+  --base-bg-color-tertiary: #060606;
+
   --nav-hover-bg-color: linear-gradient(225deg, #212a3a9e, #171b309e);
   --nav-hover-bg-shadow-color: #00000038;
   --nav-hover-text-color: #969696;
