@@ -22,11 +22,11 @@
 .nav-item button:focus {
   background: var(--nav-hover-bg-color);
   color: var(--nav-hover-text-color);
-  box-shadow: -0.15rem 0.15rem 0.3rem #283347b8 inset,
-    0.15rem -0.15rem 0.3rem #111010b8 inset, -0.15rem 0.15rem 0.3rem #111010b8;
+  box-shadow: var(--nav-hover-box-shadow);
   text-shadow: 0 0 1.75rem var(--nav-hover-text-color);
 }
 
+/* TODO - adjust accent origin to center? */
 .nav-accent {
   position: absolute;
   bottom: 0.35rem;
