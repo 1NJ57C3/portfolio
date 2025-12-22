@@ -31,7 +31,8 @@ html[data-theme="legacy"] {
 
   --base-theme-text-color: whitesmoke;
 
-  --component-theme-bg: linear-gradient(225deg, #212a3a, #171a1f);
+  --component-theme-bg: linear-gradient(225deg, rgb(var(--component-theme-bg-primary)), #171a1f);
+  --component-theme-bg-primary: 33 42 58;
   --component-theme-bg-shadow-light: 0.6rem -0.6rem 1.2rem #212a3a;
   --component-theme-bg-shadow-light-accent: -0.15rem 0.15rem 0.4rem #283347
     inset;
@@ -40,7 +41,7 @@ html[data-theme="legacy"] {
 
   --nav-hover-theme-accent-color: #9617eb80;
   --nav-hover-theme-accent-width: 96%;
-  --nav-hover-theme-bg-color: linear-gradient(225deg, #212a3a9e, #171b309e);
+  --nav-hover-theme-bg-color: linear-gradient(225deg, rgb(var(--component-theme-bg-primary) / 0.62), #171b309e);
   --nav-hover-theme-bg-shadow-color: #00000038;
   --nav-hover-theme-box-shadow: -0.15rem 0.15rem 0.3rem #283347b8 inset,
     0.15rem -0.15rem 0.3rem #111010b8 inset, -0.15rem 0.15rem 0.3rem #111010b8;
