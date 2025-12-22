@@ -1,10 +1,10 @@
 .About {
-  background: var(--bg-gradient);
-  border: var(--bg-border);
+  background: var(--component-theme-bg);
+  border: var(--component-theme-bg-border);
   border-radius: 1.15rem;
   margin: 4rem 0;
   padding: 4rem 10%;
-  box-shadow: var(--bg-shadow-dark), var(--bg-shadow-light), var(--bg-shadow-light-accent);
+  box-shadow: var(--component-theme-bg-shadow-dark), var(--component-theme-bg-shadow-light), var(--component-theme-bg-shadow-light-accent);
 }
 
 .page-header {

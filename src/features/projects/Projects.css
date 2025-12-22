@@ -7,9 +7,9 @@
   padding: 2.75rem 0.5rem;
   padding-top: 4rem;
 
-  background: var(--bg-gradient);
+  background: var(--component-theme-bg);
   border-radius: 1.15rem;
-  border: var(--bg-border);
+  border: var(--component-theme-bg-border);
   box-shadow: -0.5rem 0.5rem 1rem #181719 inset,
-    0.5rem -0.5rem 1rem #212a3a inset, var(--bg-shadow-light-accent);
+    0.5rem -0.5rem 1rem #212a3a inset, var(--component-theme-bg-shadow-light-accent);
 }

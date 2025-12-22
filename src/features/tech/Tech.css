@@ -1,10 +1,10 @@
 .Tech {
-  background: var(--bg-gradient);
-  border: var(--bg-border);
+  background: var(--component-theme-bg);
+  border: var(--component-theme-bg-border);
   border-radius: 1.15rem;
   margin: 4rem 0;
   padding: 4rem 7.5%;
-  box-shadow: var(--bg-shadow-dark), var(--bg-shadow-light), var(--bg-shadow-light-accent);
+  box-shadow: var(--component-theme-bg-shadow-dark), var(--component-theme-bg-shadow-light), var(--component-theme-bg-shadow-light-accent);
 }
 
 .Tech .tech-section + .tech-section {
@@ -13,7 +13,7 @@
 
 .Tech .card-tray {
   border-radius: 1.15rem;
-  border: var(--bg-border);
+  border: var(--component-theme-bg-border);
   padding: 1rem;
-  box-shadow: -0.5rem 0.5rem 1rem #181719 inset, 0.5rem -0.5rem 1rem #212a3a inset, var(--bg-shadow-light-accent);
+  box-shadow: -0.5rem 0.5rem 1rem #181719 inset, 0.5rem -0.5rem 1rem #212a3a inset, var(--component-theme-bg-shadow-light-accent);
 }

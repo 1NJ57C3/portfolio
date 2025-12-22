@@ -63,3 +63,12 @@ function Contacts() {
 }
 
 export default Contacts;
+
+/*
+  * thought exercise / potential concept 1:
+  ? toggle switches above each link
+    ? link only accessible after toggle switch activation
+  ? red/green indicator lights
+  ? show-on-interact lock/unlock icon
+    ? fade in/out animations
+*/
