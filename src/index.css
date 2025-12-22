@@ -4,17 +4,20 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: whitesmoke;
-  background-color: #171b20;
+  background-color: var(--base-theme-bg-color);
+  color: var(--base-theme-text-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --base-theme-bg-color: #171b20;
   --base-theme-bg-gradient-stop-primary: #121212b4;
   --base-theme-bg-gradient-stop-secondary: #0c081a6a;
   --base-theme-bg-gradient-stop-tertiary: #060606;
+
+  --base-theme-text-color: whitesmoke;
 
   --component-theme-bg: linear-gradient(225deg, #212a3a, #171a1f);
   --component-theme-bg-shadow-light: 0.6rem -0.6rem 1.2rem #212a3a;
