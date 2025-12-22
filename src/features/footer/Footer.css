@@ -1,6 +1,6 @@
 .Footer {
-  background: var(--footer-theme-bg);
-  color: var(--footer-theme-color);
+  background: var(--theme-footer-bg);
+  color: var(--theme-footer-color);
   display: flex;
   flex-direction: column;
   justify-content: center;

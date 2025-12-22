@@ -1,10 +1,10 @@
 .Contacts {
-  background: var(--component-theme-bg);
-  border: var(--component-theme-bg-border);
+  background: var(--theme-component-bg);
+  border: var(--theme-component-bg-border);
   border-radius: 1.15rem;
   margin: 4rem 0;
   padding: 4rem 7.5%;
-  box-shadow: var(--component-theme-bg-shadow-dark), var(--component-theme-bg-shadow-light), var(--component-theme-bg-shadow-light-accent);
+  box-shadow: var(--theme-component-bg-shadow-dark), var(--theme-component-bg-shadow-light), var(--theme-component-bg-shadow-light-accent);
 }
 
 .Contacts .main {

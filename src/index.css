@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  background-color: var(--base-theme-bg-color);
-  color: var(--base-theme-text-color);
+  background-color: var(--theme-base-bg);
+  color: var(--theme-base-text);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,53 +13,67 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Layout */
-  --header-layout-height: 7.25%;
-  --banner-heading-size: x-large;
-  --header-padding-x: 2rem;
-  --header-padding-y: 1.5rem;
-  --header-padding: var(--header-padding-y) var(--header-padding-x);
-  --header-padding-x-offset: calc(2 * var(--header-padding-x));
+  --layout-banner-heading-size: x-large;
+  --layout-header-height: 7.25%;
+  --layout-header-padding-x: 2rem;
+  --layout-header-padding-y: 1.5rem;
+  --layout-header-padding: var(--layout-header-padding-y)
+    var(--layout-header-padding-x);
+  --layout-header-padding-x-offset: calc(2 * var(--layout-header-padding-x));
 
-  --project-card-padding: 1.25rem;
+  --layout-project-card-padding: 1.25rem;
 }
 
 html[data-theme="legacy"] {
-  --base-theme-bg-color: #171b20;
-  --base-theme-bg-gradient-stop-primary: #121212b4;
-  --base-theme-bg-gradient-stop-secondary: #0c081a6a;
-  --base-theme-bg-gradient-stop-tertiary: #060606;
+  /* Base */
+  --theme-base-bg: #171b20;
+  --theme-base-bg-primary: #121212b4;
+  --theme-base-bg-secondary: #0c081a6a;
+  --theme-base-bg-tertiary: #060606;
 
-  --base-theme-text-color: whitesmoke;
+  --theme-base-text: whitesmoke;
 
-  --component-theme-bg: linear-gradient(225deg, rgb(var(--component-theme-bg-primary)), #171a1f);
-  --component-theme-bg-primary: 33 42 58;
-  --component-theme-bg-shadow-light: 0.6rem -0.6rem 1.2rem #212a3a;
-  --component-theme-bg-shadow-light-accent: -0.15rem 0.15rem 0.4rem #283347
+  /* Component */
+  --theme-component-bg-primary: 33 42 58;
+  --theme-component-bg: linear-gradient(
+    225deg,
+    rgb(var(--theme-component-bg-primary)),
+    #171a1f
+  );
+  --theme-component-bg-shadow-light: 0.6rem -0.6rem 1.2rem #212a3a;
+  --theme-component-bg-shadow-light-accent: -0.15rem 0.15rem 0.4rem #283347
     inset;
-  --component-theme-bg-shadow-dark: -0.6rem 0.6rem 1.5rem #111010;
-  --component-theme-bg-border: 1.5px ridge transparent;
+  --theme-component-bg-shadow-dark: -0.6rem 0.6rem 1.5rem #111010;
+  --theme-component-bg-border: 1.5px ridge transparent;
 
-  --nav-hover-theme-accent-color: #9617eb80;
-  --nav-hover-theme-accent-width: 96%;
-  --nav-hover-theme-bg-color: linear-gradient(225deg, rgb(var(--component-theme-bg-primary) / 0.62), #171b309e);
-  --nav-hover-theme-bg-shadow-color: #00000038;
-  --nav-hover-theme-box-shadow: -0.15rem 0.15rem 0.3rem #283347b8 inset,
+  /* NavBar */
+  --theme-nav-hover-bg: linear-gradient(
+    225deg,
+    rgb(var(--theme-component-bg-primary) / 0.62),
+    #171b309e
+  );
+  --theme-nav-hover-bg-shadow-color: #00000038;
+  --theme-nav-hover-box-shadow: -0.15rem 0.15rem 0.3rem #283347b8 inset,
     0.15rem -0.15rem 0.3rem #111010b8 inset, -0.15rem 0.15rem 0.3rem #111010b8;
-  --nav-hover-theme-text-color: #969696;
+  --theme-nav-hover-text: #969696;
+  --theme-nav-hover-accent-color: #9617eb80;
+  --theme-nav-hover-accent-width: 96%;
 
-  --header-theme-bg: linear-gradient(
-    var(--base-theme-bg-gradient-stop-tertiary) 10%,
-    var(--base-theme-bg-gradient-stop-primary) 74%,
-    var(--base-theme-bg-gradient-stop-secondary)
+  /* Header */
+  --theme-header-bg: linear-gradient(
+    var(--theme-base-bg-tertiary) 10%,
+    var(--theme-base-bg-primary) 74%,
+    var(--theme-base-bg-secondary)
   );
-  --header-theme-bg-blur: blur(0.27rem);
+  --theme-header-bg-blur: blur(0.27rem);
 
-  --footer-theme-bg: linear-gradient(
-    var(--base-theme-bg-gradient-stop-secondary),
-    var(--base-theme-bg-gradient-stop-primary) 74%,
-    var(--base-theme-bg-gradient-stop-tertiary)
+  /* Footer */
+  --theme-footer-bg: linear-gradient(
+    var(--theme-base-bg-secondary),
+    var(--theme-base-bg-primary) 74%,
+    var(--theme-base-bg-tertiary)
   );
-  --footer-theme-color: #888;
+  --theme-footer-color: #888;
 }
 
 a {
@@ -105,8 +119,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: dark) {
   html {
-    --base-theme-bg-color: #171b20;
-    --base-theme-text-color: whitesmoke;
+    --theme-base-bg: #171b20;
+    --theme-base-text: whitesmoke;
   }
   a:hover {
     color: #747bff;
@@ -115,8 +129,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   html {
-    --base-theme-bg-color: #ffffff;
-    --base-theme-text-color: #213547;
+    --theme-base-bg: #ffffff;
+    --theme-base-text: #213547;
   }
   a:hover {
     color: #747bff;

@@ -1,11 +1,11 @@
 .ProjectCard {
-  background: var(--component-theme-bg);
-  border: var(--component-theme-bg-border);
+  background: var(--theme-component-bg);
+  border: var(--theme-component-bg-border);
   border-radius: 0.75rem;
   margin: 1.5rem 0;
   padding: 3.25rem;
-  padding-left: var(--project-card-padding);
-  box-shadow: var(--component-theme-bg-shadow-dark), 0.1rem -0.1rem 0.3rem #212a3a, var(--component-theme-bg-shadow-light-accent);
+  padding-left: var(--layout-project-card-padding);
+  box-shadow: var(--theme-component-bg-shadow-dark), 0.1rem -0.1rem 0.3rem #212a3a, var(--theme-component-bg-shadow-light-accent);
 }
 
 .ProjectCard .content {
@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: var(--project-card-padding);
+  padding-right: var(--layout-project-card-padding);
   width: 30%;
 }
 
@@ -32,7 +32,7 @@
 .ProjectCard section.info {
   display: flex;
   flex-direction: column;
-  padding-left: var(--project-card-padding);
+  padding-left: var(--layout-project-card-padding);
   width: 70%;
 }
 

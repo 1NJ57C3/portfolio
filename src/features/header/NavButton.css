@@ -20,10 +20,10 @@
 
 .nav-item:hover > button,
 .nav-item button:focus {
-  background: var(--nav-hover-theme-bg-color);
-  color: var(--nav-hover-theme-text-color);
-  box-shadow: var(--nav-hover-theme-box-shadow);
-  text-shadow: 0 0 1.75rem var(--nav-hover-theme-text-color);
+  background: var(--theme-nav-hover-bg);
+  color: var(--theme-nav-hover-text);
+  box-shadow: var(--theme-nav-hover-box-shadow);
+  text-shadow: 0 0 1.75rem var(--theme-nav-hover-text);
 }
 
 /* TODO - adjust accent origin to center? */
@@ -31,16 +31,16 @@
   position: absolute;
   bottom: 0.35rem;
   left: 0;
-  background-color: var(--nav-hover-theme-accent-color);
+  background-color: var(--theme-nav-hover-accent-color);
   border-radius: 75%;
   height: 1.5px;
   width: 0;
-  margin-left: calc((100% - var(--nav-hover-theme-accent-width)) / 2);
+  margin-left: calc((100% - var(--theme-nav-hover-accent-width)) / 2);
   cursor: pointer;
   transition: 400ms;
 }
 
 .nav-item:hover > .nav-accent,
 .nav-item button:focus + .nav-accent {
-  width: var(--nav-hover-theme-accent-width);
+  width: var(--theme-nav-hover-accent-width);
 }

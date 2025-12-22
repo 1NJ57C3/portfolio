@@ -1,13 +1,13 @@
 .Header {
-  background: var(--header-theme-bg);
-  backdrop-filter: var(--header-theme-bg-blur);
+  background: var(--theme-header-bg);
+  backdrop-filter: var(--theme-header-bg-blur);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
-  height: var(--header-layout-height);
+  height: var(--layout-header-height);
   width: 100%;
   z-index: 1;
 }

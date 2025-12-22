@@ -24,8 +24,8 @@ main {
 
 .logo {
   margin: 0;
-  padding: var(--header-padding);
-  font-size: var(--banner-heading-size);
+  padding: var(--layout-header-padding);
+  font-size: var(--layout-banner-heading-size);
 }
 
 .logo {
