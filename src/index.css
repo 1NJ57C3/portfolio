@@ -12,9 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --base-bg-color-primary: #121212b4;
-  --base-bg-color-secondary: #0c081a6a;
-  --base-bg-color-tertiary: #060606;
+  --base-theme-bg-gradient-stop-primary: #121212b4;
+  --base-theme-bg-gradient-stop-secondary: #0c081a6a;
+  --base-theme-bg-gradient-stop-tertiary: #060606;
 
   --component-theme-bg: linear-gradient(225deg, #212a3a, #171a1f);
   --component-theme-bg-shadow-light: 0.6rem -0.6rem 1.2rem #212a3a;
@@ -31,27 +31,18 @@
     0.15rem -0.15rem 0.3rem #111010b8 inset, -0.15rem 0.15rem 0.3rem #111010b8;
 
   --header-theme-bg: linear-gradient(
-    var(--base-bg-color-tertiary) 10%,
-    var(--base-bg-color-primary) 74%,
-    var(--base-bg-color-secondary)
+    var(--base-theme-bg-gradient-stop-tertiary) 10%,
+    var(--base-theme-bg-gradient-stop-primary) 74%,
+    var(--base-theme-bg-gradient-stop-secondary)
   );
   --header-theme-bg-blur: blur(0.27rem);
-  --header-layout-height: 7.25%;
 
   --footer-theme-bg: linear-gradient(
-    var(--base-bg-color-secondary),
-    var(--base-bg-color-primary) 74%,
-    var(--base-bg-color-tertiary)
+    var(--base-theme-bg-gradient-stop-secondary),
+    var(--base-theme-bg-gradient-stop-primary) 74%,
+    var(--base-theme-bg-gradient-stop-tertiary)
   );
   --footer-theme-color: #888;
-
-  --banner-heading-size: x-large;
-  --header-padding-x: 2rem;
-  --header-padding-y: 1.5rem;
-  --header-padding: var(--header-padding-y) var(--header-padding-x);
-  --header-padding-x-offset: calc(2 * var(--header-padding-x));
-
-  --project-card-padding: 1.25rem;
 }
 
 a {
