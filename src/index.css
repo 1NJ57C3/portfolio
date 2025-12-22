@@ -38,13 +38,13 @@
   --component-theme-bg-shadow-dark: -0.6rem 0.6rem 1.5rem #111010;
   --component-theme-bg-border: 1.5px ridge transparent;
 
-  --nav-hover-bg-color: linear-gradient(225deg, #212a3a9e, #171b309e);
-  --nav-hover-bg-shadow-color: #00000038;
-  --nav-hover-text-color: #969696;
-  --nav-hover-accent-color: #9617eb80;
-  --nav-hover-accent-width: 96%;
-  --nav-hover-box-shadow: -0.15rem 0.15rem 0.3rem #283347b8 inset,
+  --nav-hover-theme-accent-color: #9617eb80;
+  --nav-hover-theme-accent-width: 96%;
+  --nav-hover-theme-bg-color: linear-gradient(225deg, #212a3a9e, #171b309e);
+  --nav-hover-theme-bg-shadow-color: #00000038;
+  --nav-hover-theme-box-shadow: -0.15rem 0.15rem 0.3rem #283347b8 inset,
     0.15rem -0.15rem 0.3rem #111010b8 inset, -0.15rem 0.15rem 0.3rem #111010b8;
+  --nav-hover-theme-text-color: #969696;
 
   --header-theme-bg: linear-gradient(
     var(--base-theme-bg-gradient-stop-tertiary) 10%,
