@@ -23,7 +23,7 @@
   --project-card-padding: 1.25rem;
 }
 
-:root[data-theme="legacy"] {
+html[data-theme="legacy"] {
   --base-theme-bg-color: #171b20;
   --base-theme-bg-gradient-stop-primary: #121212b4;
   --base-theme-bg-gradient-stop-secondary: #0c081a6a;
@@ -103,7 +103,7 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  html {
     --base-theme-bg-color: #171b20;
     --base-theme-text-color: whitesmoke;
   }
@@ -113,7 +113,7 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  html {
     --base-theme-bg-color: #ffffff;
     --base-theme-text-color: #213547;
   }
