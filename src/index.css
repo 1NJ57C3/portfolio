@@ -33,7 +33,8 @@
 
   --component-theme-bg: linear-gradient(225deg, #212a3a, #171a1f);
   --component-theme-bg-shadow-light: 0.6rem -0.6rem 1.2rem #212a3a;
-  --component-theme-bg-shadow-light-accent: -0.15rem 0.15rem 0.4rem #283347 inset;
+  --component-theme-bg-shadow-light-accent: -0.15rem 0.15rem 0.4rem #283347
+    inset;
   --component-theme-bg-shadow-dark: -0.6rem 0.6rem 1.5rem #111010;
   --component-theme-bg-border: 1.5px ridge transparent;
 
