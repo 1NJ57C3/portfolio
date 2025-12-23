@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { NavProvider } from "./shared/contexts/NavContext";
 import Header from "./features/header/Header";
 import Landing from "./features/landing/Landing";
@@ -9,9 +10,15 @@ import Footer from "./features/footer/Footer";
 import "./App.css";
 
 function App() {
+  const theme = "legacy";
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+  }, [theme]);
+
   return (
     <div className="App">
-      <NavProvider >
+      <NavProvider>
         <Header />
         <main>
           <Landing />
