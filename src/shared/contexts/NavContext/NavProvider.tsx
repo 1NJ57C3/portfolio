@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { ChildrenProps } from "../../types/context";
+import { ChildrenProps } from "@/shared/types/context";
 import { NavContext, NavRefTypes } from "./NavContext";
 
 export function NavProvider({ children }: ChildrenProps) {

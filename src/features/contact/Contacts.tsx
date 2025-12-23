@@ -1,4 +1,4 @@
-import { useNavContext } from "../../shared/contexts/NavContext";
+import { useNavContext } from "@/shared/contexts/NavContext";
 import "./Contacts.css";
 
 function Contacts() {
