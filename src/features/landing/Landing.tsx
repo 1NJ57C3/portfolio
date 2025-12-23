@@ -1,4 +1,5 @@
 import { useTypewriter } from "@/shared/hooks/useTypewriter";
+
 import "./Landing.css";
 
 function Landing(){

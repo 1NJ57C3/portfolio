@@ -1,4 +1,5 @@
 import { useNavContext } from "@/shared/contexts/NavContext";
+
 import "./Contacts.css";
 
 function Contacts() {

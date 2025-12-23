@@ -1,12 +1,14 @@
 import { useEffect } from "react";
-import Header from "./features/header/Header";
-import Landing from "./features/landing/Landing";
+
 import About from "./features/about/About";
-import Projects from "./features/projects/Projects";
-import Tech from "./features/tech/Tech";
 import Contacts from "./features/contact/Contacts";
 import Footer from "./features/footer/Footer";
+import Header from "./features/header/Header";
+import Landing from "./features/landing/Landing";
+import Projects from "./features/projects/Projects";
+import Tech from "./features/tech/Tech";
 import { useThemeContext } from "./shared/contexts/ThemeContext";
+
 import "./App.css";
 
 function App() {
