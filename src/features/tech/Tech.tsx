@@ -1,4 +1,4 @@
-import { useNavContext } from "../../shared/contexts/useNavContext";
+import { useNavContext } from "../../shared/contexts/NavContext";
 import TechCard from "./TechCard";
 import technologies from "./tech.json";
 import "./Tech.css";
