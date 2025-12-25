@@ -1,8 +1,9 @@
+import { Theme } from "@/shared/types/theme";
 import { createContext } from "react";
 
 interface ContextTypes {
-  theme: string;
-  setTheme: React.Dispatch<React.SetStateAction<string>>;
+  theme: Theme;
+  setTheme: React.Dispatch<React.SetStateAction<Theme>>;
 }
 
 export const ThemeContext = createContext<ContextTypes | null>(null);
