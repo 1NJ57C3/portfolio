@@ -24,58 +24,6 @@
   --layout-project-card-padding: 1.25rem;
 }
 
-html[data-theme="legacy"] {
-  /* Base */
-  --theme-base-bg: #171b20;
-  --theme-base-bg-primary: #121212b4;
-  --theme-base-bg-secondary: #0c081a6a;
-  --theme-base-bg-tertiary: #060606;
-
-  --theme-base-text: whitesmoke;
-
-  /* Component */
-  --theme-component-bg-primary: 33 42 58;
-  --theme-component-bg: linear-gradient(
-    225deg,
-    rgb(var(--theme-component-bg-primary)),
-    #171a1f
-  );
-  --theme-component-bg-shadow-light: 0.6rem -0.6rem 1.2rem #212a3a;
-  --theme-component-bg-shadow-light-accent: -0.15rem 0.15rem 0.4rem #283347
-    inset;
-  --theme-component-bg-shadow-dark: -0.6rem 0.6rem 1.5rem #111010;
-  --theme-component-bg-border: 1.5px ridge transparent;
-
-  /* NavBar */
-  --theme-nav-hover-bg: linear-gradient(
-    225deg,
-    rgb(var(--theme-component-bg-primary) / 0.62),
-    #171b309e
-  );
-  --theme-nav-hover-bg-shadow-color: #00000038;
-  --theme-nav-hover-box-shadow: -0.15rem 0.15rem 0.3rem #283347b8 inset,
-    0.15rem -0.15rem 0.3rem #111010b8 inset, -0.15rem 0.15rem 0.3rem #111010b8;
-  --theme-nav-hover-text: #969696;
-  --theme-nav-hover-accent-color: #9617eb80;
-  --theme-nav-hover-accent-width: 96%;
-
-  /* Header */
-  --theme-header-bg: linear-gradient(
-    var(--theme-base-bg-tertiary) 10%,
-    var(--theme-base-bg-primary) 74%,
-    var(--theme-base-bg-secondary)
-  );
-  --theme-header-bg-blur: blur(0.27rem);
-
-  /* Footer */
-  --theme-footer-bg: linear-gradient(
-    var(--theme-base-bg-secondary),
-    var(--theme-base-bg-primary) 74%,
-    var(--theme-base-bg-tertiary)
-  );
-  --theme-footer-color: #888;
-}
-
 a {
   font-weight: 500;
   color: #646cff;
