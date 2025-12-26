@@ -1,0 +1,4 @@
+html[data-theme="dark"] {
+  /* Base */
+  --theme-base-bg: #000000;
+}
