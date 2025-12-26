@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 
-import { ChildrenProps } from "@/shared/types/context";
 import { Theme } from "@/shared/types/theme";
 
 import { ThemeContext } from "./ThemeContext";
 import { themeLoaders } from "./themeLoaders";
 
-export function ThemeProvider({ children }: ChildrenProps) {
+export function ThemeProvider({ children }: React.PropsWithChildren) {
   const [theme, setTheme] = useState<Theme>("legacy");
 
   useEffect(() => {
